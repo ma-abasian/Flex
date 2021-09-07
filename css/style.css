@@ -31,17 +31,17 @@ h1 {
   font-weight: bold;
 }
 
-/*************** import ***************/
+/****************************** import ******************************/
 @import url(/Flex/WebFonts/css/fontiran.css);
 
-/*************** cintainer ***************/
+/****************************** container ******************************/
 .container {
   width: 65%;
   margin: 0 auto;
   margin-bottom: 40px;
 }
 
-/*************** header ***************/
+/****************************** header ******************************/
 header {
   box-shadow: 0px 1px 30px 0px rgba(1, 89, 245, 0.3);
 }
@@ -53,29 +53,62 @@ header {
   height: 80px;
 }
 
+/******* header menu *******/
 .top-header .menu {
   display: flex;
   color: #929292;
 }
 
 .top-header .menu li a {
+  position: relative;
   color: #929292;
   font-size: 15px;
+}
+
+.top-header .menu li a.active::after {
+  content: "";
+  width: 13px;
+  height: 5px;
+  border-radius: 30px;
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0159f5;
+  box-shadow: 0 0 10px #0159f5;
 }
 
 .top-header .menu li a.active {
   font-weight: 900;
 }
 
+.top-header .menu li a:hover {
+  font-weight: 900;
+}
+
+.top-header .menu li a:hover:after {
+  content: "";
+  width: 13px;
+  height: 5px;
+  border-radius: 30px;
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0159f5;
+  box-shadow: 0 0 10px #0159f5;
+}
+
 .top-header .menu li::after {
   content: "/";
-  margin: 0 1.5rem;
+  margin: 0 1.25rem;
 }
 
 .top-header .menu li:last-child::after {
   content: "";
 }
 
+/******* header member *******/
 .top-header .member {
   display: flex;
 }
@@ -101,8 +134,7 @@ header {
 }
 
 .top-header .card {
-  width: 40px;
-  height: 40px;
+  padding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,13 +143,13 @@ header {
   border-radius: 100%;
 }
 
-/*************** sec ***************/
+/****************************** sec ******************************/
 .sec {
   display: flex;
   justify-content: space-between;
 }
 
-/*************** latest ***************/
+/****************************** latest ******************************/
 .sec > div {
   position: relative;
 }
@@ -164,12 +196,19 @@ header {
   margin-left: 6px;
 }
 
-/*************** slider ***************/
+/****************************** slider ******************************/
 .sec .slider {
   width: 74%;
   height: 420px;
-  border-radius: 20px;
   overflow: hidden;
+}
+
+.sec .slider .slider-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .sec .slider .pic {
@@ -180,6 +219,9 @@ header {
 }
 
 .sec .slider .counter {
+  background: url("/Flex/images/slider/other.png") no-repeat;
+  width: 282px;
+  height: 96px;
   position: absolute;
   bottom: 0px;
   left: -2px;
@@ -216,7 +258,7 @@ header {
   margin-left: 6px;
 }
 
-/*************** form ***************/
+/****************************** form ******************************/
 .form {
   height: 40px;
 }
@@ -227,28 +269,56 @@ header {
   font-weight: 900;
 }
 
-/*************** blog ***************/
+.form form {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  color: #505050;
+}
+
+.form form select {
+  width: 30%;
+  height: 100%;
+  border: none;
+  border-radius: 40px;
+  background-color: rgba(204, 204, 204, 0.2);
+  font-size: 15px;
+  color: #777777;
+  padding: 0 15px;
+}
+
+.form form .search {
+  width: 60%;
+  height: 100%;
+  border: none;
+  border-radius: 40px;
+  background-color: rgba(204, 204, 204, 0.2);
+  font-size: 15px;
+  color: #777777;
+  padding: 0 15px;
+}
+
+/****************************** blog ******************************/
 .blog {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
-  background-image: -webkit-linear-gradient(
-    rgb(255, 255, 255),
-    rgb(250, 250, 250),
-    rgb(255, 255, 255),
-    rgb(250, 250, 250),
-    rgb(255, 255, 255)
-  );
+  grid-gap: 26px;
 }
 
 .blog-item {
   background-color: #ffffff;
+  box-shadow: 0px 10px 15px rgba(204, 204, 204, 0.1);
   border-radius: 30px;
   padding: 1.5rem 0;
+  height: 560px;
+  position: relative;
 }
 
 .blog-img {
-  height: 230px;
+  height: 42%;
+  position: relative;
 }
 
 .blog-img img {
@@ -258,55 +328,105 @@ header {
   height: 100%;
 }
 
-.blog-item:nth-child(3n + 1) .blog-img img {
+.blog-item.first .blog-img img {
   border-bottom-left-radius: 0px;
 }
 
-.blog-item:nth-child(3n) .blog-img img {
+.blog-item.third .blog-img img {
   border-bottom-right-radius: 0px;
 }
 
-.blog-middle {
+.blog-img-time {
+  background: url("../images/blog/time\ bg.png");
+  width: 140px;
+  height: 29px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 14px;
+  color: #025af5;
+  font-weight: 700;
+}
+
+.blog-img-time span {
+  margin-right: 11px;
+  line-height: 25px;
+}
+
+.blog-img-time span:nth-child(2) {
+  margin-right: 25px;
+}
+
+.blog-item .content {
+  height: 55%;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
   color: #505050;
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 
 .blog-middle .blog-title {
   font-size: 16px;
-  margin-bottom: 20px;
 }
 
 .blog-middle .blog-text {
   font-size: 15px;
-  line-height: 45px;
+  line-height: 42px;
   text-align: justify;
+  margin: 20px 0;
 }
 
 .blog-footer {
+  width: 100%;
   display: flex;
   align-items: center;
-  color: #929292;
-  font-size: 13px;
-  justify-content: space-between;
-  padding: 0.5rem 1.5rem;
+  color: #999999;
+  font-size: 12px;
+  padding: 0.75rem 0 2rem 0;
 }
 
-.blog-footer span {
+.blog-footer .blog-footer-text {
   display: flex;
   align-items: center;
   margin: 0 !important;
+  margin-left: 20px !important;
 }
 
 .blog-footer img {
-  margin-left: 9px;
-  width: 21px;
+  height: 20;
+}
+
+.blog-footer .blog-footer-img {
+  margin-left: 8px;
+  position: relative;
+}
+
+.blog-footer .blog-footer-text span {
+  position: relative;
+  height: 20px;
+}
+
+.blog-footer .blog-footer-text span::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #999999;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.blog-footer .blog-footer-text span.profile::after {
+  background-color: #0159f5;
 }
 
 .blog-footer .btn-blue {
-  padding: 7px 25px;
+  padding: 7px 21px;
   color: #ffffff;
   background-color: #0159f5;
   border-radius: 50px;
+  margin-left: 0 !important;
 }
 
 /******* blog-wide *******/
@@ -316,15 +436,29 @@ header {
   align-items: center;
   grid-column-start: 1;
   grid-column-end: 4;
+  background: url("../images/blog/pic-wide.png") no-repeat left center/60%;
+  border-radius: 30px 0px 0px 30px;
+  position: relative;
 }
 
-.blog-item-wide .blog-img {
-  width: 60%;
+.blog-item-wide .blog-img-time {
+  left: 30px;
+  right: auto;
 }
 
-.blog-item-wide .blog-img img {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
+.blog-item-wide .content {
+  width: 65%;
+  padding: 20px 15px 30px 190px;
+  background-image: linear-gradient(
+    to left,
+    #ffffff 75%,
+    rgba(255, 255, 255, 0.9) 80%,
+    rgba(255, 255, 255, 0.8) 85%,
+    rgba(255, 255, 255, 0.6) 90%,
+    rgba(255, 255, 255, 0.3) 95%,
+    rgba(255, 255, 255, 0.2) 97%,
+    rgba(255, 255, 255, 0.01) 100%
+  );
 }
 
 .blog-item-wide .blog-footer {
@@ -333,9 +467,66 @@ header {
   align-items: center;
   color: #929292;
   font-size: 13px;
-  padding: 0.5rem 1.5rem;
+  padding-bottom: 0;
 }
 
-.blog-item-wide .blog-footer span {
+.blog-item-wide .blog-footer > span {
   margin-left: 30px !important;
+}
+
+/******* blog-video *******/
+
+.blog-item.video .blog-img {
+  height: 100%;
+  width: 100%;
+}
+
+.blog-item.video .content {
+  height: auto;
+}
+
+.blog-item.video .play {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-image: linear-gradient(
+    to top,
+    #ffffff 20%,
+    rgba(255, 255, 255, 0.9) 25%,
+    rgba(255, 255, 255, 0.8) 30%,
+    rgba(255, 255, 255, 0.6) 35%,
+    rgba(255, 255, 255, 0.3) 40%,
+    rgba(255, 255, 255, 0.2) 42%,
+    rgba(255, 255, 255, 0.01) 45%
+  );
+}
+
+.blog-item.video .play a {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(2, 90, 245, 0.6);
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-item.video .play a::after {
+  content: "";
+  position: absolute;
+  top: -10.9px;
+  left: -10.9px;
+  border-radius: 50%;
+  border: 1px solid rgba(2, 90, 245, 0.6);
+  width: 120%;
+  height: 120%;
+}
+
+.blog-item.video .play a img {
+  transform: translateX(10%);
 }
