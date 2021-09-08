@@ -218,15 +218,6 @@ header {
   top: -250px;
 }
 
-.sec .slider .counter {
-  background: url("/Flex/images/slider/other.png") no-repeat;
-  width: 282px;
-  height: 96px;
-  position: absolute;
-  bottom: 0px;
-  left: -2px;
-}
-
 .sec .slider .text {
   position: absolute;
   bottom: 30px;
@@ -256,6 +247,114 @@ header {
 .sec .slider .text div img {
   vertical-align: middle;
   margin-left: 6px;
+}
+
+.sec .slider .counter {
+  background: url("/Flex/images/slider/other.png") no-repeat;
+  width: 282px;
+  height: 96px;
+  position: absolute;
+  bottom: 0px;
+  left: -2px;
+}
+
+.sec .slider .counter .content {
+  position: absolute;
+  bottom: 25%;
+  right: 0;
+  padding-right: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.sec .slider .counter .counter-text {
+  font-size: 13px;
+  color: rgba(136, 136, 136, 0.4);
+  display: flex;
+  align-items: flex-end;
+}
+
+.sec .slider .counter .counter-text .slash {
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.sec .slider .counter .counter-text .page {
+  font-size: 20px;
+  color: rgba(136, 136, 136, 1);
+}
+
+.sec .slider .counter .dots {
+  display: flex;
+}
+
+.sec .slider .counter .dots a {
+  margin-right: 21px;
+  position: relative;
+}
+
+.sec .slider .counter .dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(136, 136, 136, 0.3);
+}
+
+.sec .slider .counter .dots a.active::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  width: 19px;
+  height: 19px;
+  transform: rotate(-45deg);
+  border: rgba(136, 136, 136, 0.3) solid 2px;
+  border-radius: 50%;
+  animation: page-time 4s forwards steps(1, end);
+  -webkit-animation: page-time 4s forwards steps(1, end);
+}
+
+@keyframes page-time {
+  25% {
+    border-left: rgba(120, 120, 120, 1) 2px solid;
+  }
+  50% {
+    border-left: rgba(120, 120, 120, 1) 2px solid;
+    border-top: rgba(120, 120, 120, 1) 2px solid;
+  }
+  75% {
+    border-left: rgba(120, 120, 120, 1) 2px solid;
+    border-top: rgba(120, 120, 120, 1) 2px solid;
+    border-right: rgba(120, 120, 120, 1) 2px solid;
+  }
+  100% {
+    border-left: rgba(120, 120, 120, 1) 2px solid;
+    border-top: rgba(120, 120, 120, 1) 2px solid;
+    border-right: rgba(120, 120, 120, 1) 2px solid;
+    border-bottom: rgba(120, 120, 120, 1) 2px solid;
+  }
+}
+
+@-webkit-keyframes page-time {
+  25% {
+    border-left: rgba(120, 120, 120, 1) 2px solid;
+  }
+  50% {
+    border-left: rgba(120, 120, 120, 1) 2px solid;
+    border-top: rgba(120, 120, 120, 1) 2px solid;
+  }
+  75% {
+    border-left: rgba(120, 120, 120, 1) 2px solid;
+    border-top: rgba(120, 120, 120, 1) 2px solid;
+    border-right: rgba(120, 120, 120, 1) 2px solid;
+  }
+  100% {
+    border-left: rgba(120, 120, 120, 1) 2px solid;
+    border-top: rgba(120, 120, 120, 1) 2px solid;
+    border-right: rgba(120, 120, 120, 1) 2px solid;
+    border-bottom: rgba(120, 120, 120, 1) 2px solid;
+  }
 }
 
 /****************************** form ******************************/
