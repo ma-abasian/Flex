@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -531,9 +533,16 @@
             </div>
 
             <div class="play">
-                <a href="#">
+                <button class="play-btn" onclick="playPause()">
                     <img src="icons/play.svg" alt="play">
-                </a>
+                </button>
+            </div>
+
+            <div id="video-s" onclick="close()">
+                <video id="video1" controls>
+                    <source src="IMG_20210701_142113_733.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
             </div>
 
             <div class="content">
@@ -743,6 +752,25 @@
 
     </section>
 
+
+    <script>
+
+        var myVideo = document.getElementById("video1");
+
+        function playPause() {
+            if (myVideo.paused) {
+                $('#video-s').show();
+                myVideo.play();
+            }
+            else {
+                $('#video-s').hide();
+                myVideo.pause();
+            }
+        }
+
+
+
+    </script>
 </body>
 
 </html>
