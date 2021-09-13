@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
@@ -20,33 +21,57 @@
                 <div class="logo">
                     <img src="images/header/logo.png" alt="logo">
                 </div>
-                <ul class="menu">
-                    <li>
-                        <a href="#" class="active">
-                            صفحه اصلی
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            خدمات
-                        </a>
-                    </li>
 
-                    <li><a href="#">
-                            تماس با ما
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            گالری
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            درباره ما
-                        </a>
-                    </li>
-                </ul>
+
+                <div class="top-menu">
+                    <ul class="menu">
+                        <li>
+                            <a href="#" class="active">صفحه اصلی</a>
+
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">
+                                        Lorem ipsum dolor sit.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Lorem ipsum dolor sit.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Lorem ipsum dolor sit.
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#">
+                                خدمات
+                            </a>
+                        </li>
+
+                        <li><a href="#">
+                                تماس با ما
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                گالری
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                درباره ما
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
                 <div class="member">
                     <div class="user">
                         <span class="icon">
@@ -71,13 +96,13 @@
         </div>
     </header>
 
-    <section class="sec container">
+    <section class="sec sec-slider container">
 
         <div class="latest">
             <img src="images/latest/pic.png" alt="latest">
             <div class="text">
                 <h2 class="">
-                    7 کتابی که به توصیه‌ی
+                    ۷ کتابی که به توصیه‌ی
                     ایلان ماسک باید بخوانید
                 </h2>
                 <div>
@@ -99,7 +124,7 @@
                 <div class="text">
 
                     <h2 class="">
-                        7 کتابی که به توصیه‌ی
+                        ۷ کتابی که به توصیه‌ی
                         ایلان ماسک باید بخوانید
                     </h2>
                     <p class="">
@@ -168,25 +193,28 @@
 
     </section>
 
-    <section class="container">
+    <section class="sec-form container">
 
         <div class="form sec">
 
             <span><a href="#">وبلاگ آموزشی</a></span>
 
             <form action="" method="get">
-                <select>
-                    <option value="1">دسته بندی ها</option>
+                <div class="select">
+                    <select>
+                        <option value="1">دسته بندی ها</option>
 
-                    <option value="2">1</option>
+                        <option value="2">1</option>
 
-                    <option value="3">1</option>
+                        <option value="3">1</option>
 
-                    <option value="4">1</option>
-                </select>
+                        <option value="4">1</option>
+                    </select>
 
-                <input type="search" name="serch" id="" value="مطالب مورد نظر خود را جستجو کنید..." class="search">
-
+                </div>
+                <div class="search">
+                    <input type="search" name="serch" id="" placeholder="مطالب مورد نظر خود را جستجو کنید...">
+                </div>
             </form>
         </div>
 
@@ -199,7 +227,7 @@
                 <img src="images/blog/pic (1).png" alt="blog-image">
                 <div class="blog-img-time">
                     <span>
-                        7
+                        ۷
                     </span>
                     <span>
                         دقیقه مطالعه
@@ -255,7 +283,7 @@
                 <img src="images/blog/pic (2).png" alt="blog-image">
                 <div class="blog-img-time">
                     <span>
-                        7
+                        ۷
                     </span>
                     <span>
                         دقیقه مطالعه
@@ -311,7 +339,7 @@
                 <img src="images/blog/pic (3).png" alt="blog-image">
                 <div class="blog-img-time">
                     <span>
-                        7
+                        ۷
                     </span>
                     <span>
                         دقیقه مطالعه
@@ -366,7 +394,7 @@
         <div class="blog-item-wide">
             <div class="blog-img-time">
                 <span>
-                    7
+                    ۷
                 </span>
                 <span>
                     دقیقه مطالعه
@@ -422,7 +450,7 @@
                 <img src="images/blog/pic (4).png" alt="blog-image">
                 <div class="blog-img-time">
                     <span>
-                        7
+                        ۷
                     </span>
                     <span>
                         دقیقه مطالعه
@@ -477,7 +505,7 @@
                 <img src="images/blog/pic (5).png" alt="blog-image">
                 <div class="blog-img-time">
                     <span>
-                        7
+                        ۷
                     </span>
                     <span>
                         دقیقه مطالعه
@@ -533,17 +561,12 @@
             </div>
 
             <div class="play">
-                <button class="play-btn" onclick="playPause()">
-                    <img src="icons/play.svg" alt="play">
-                </button>
+                <div class="play-btn">
+                    <img class="play-btn-img" src="icons/play.svg" alt="play"
+                        onclick="playPause('video/sample-5s.mp4')">
+                </div>
             </div>
 
-            <div id="video-s" onclick="close()">
-                <video id="video1" controls>
-                    <source src="IMG_20210701_142113_733.mp4" type="video/mp4">
-                    Your browser does not support HTML video.
-                </video>
-            </div>
 
             <div class="content">
                 <div class="blog-middle">
@@ -588,7 +611,7 @@
                 <img src="images/blog/pic (7).png" alt="blog-image">
                 <div class="blog-img-time">
                     <span>
-                        7
+                        ۷
                     </span>
                     <span>
                         دقیقه مطالعه
@@ -643,7 +666,7 @@
                 <img src="images/blog/pic (8).png" alt="blog-image">
                 <div class="blog-img-time">
                     <span>
-                        7
+                        ۷
                     </span>
                     <span>
                         دقیقه مطالعه
@@ -698,7 +721,7 @@
                 <img src="images/blog/pic (9).png" alt="blog-image">
                 <div class="blog-img-time">
                     <span>
-                        7
+                        ۷
                     </span>
                     <span>
                         دقیقه مطالعه
@@ -753,22 +776,16 @@
     </section>
 
 
+    <div id="videoPlayer">
+        <video width="100%" id="myVideo" controls>
+            <source src="video/sample-5s.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+        <img class="close-btn" src="icons/icons8-close-64.png" alt="close" onclick="stopVideo()">
+    </div>
+
+    <script src="Js/java.js"></script>
     <script>
-
-        var myVideo = document.getElementById("video1");
-
-        function playPause() {
-            if (myVideo.paused) {
-                $('#video-s').show();
-                myVideo.play();
-            }
-            else {
-                $('#video-s').hide();
-                myVideo.pause();
-            }
-        }
-
-
 
     </script>
 </body>
