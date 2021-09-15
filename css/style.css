@@ -55,7 +55,7 @@ input[type="submit"] {
 }
 
 /****************************** import ******************************/
-@import url(/Flex/WebFonts/css/fontiran.css);
+@import url(/WebFonts/css/fontiran.css);
 
 /****************************** container ******************************/
 .container {
@@ -69,7 +69,7 @@ header {
   background-color: #ffffff;
   box-shadow: 0px 2px 20px 0px rgba(1, 89, 245, 0.2);
   margin-bottom: 41px;
-  z-index: 5;
+  z-index: 999;
 }
 
 .top-header {
@@ -84,7 +84,7 @@ header {
   display: flex;
   color: #929292;
   font-size: 16px;
-  transform: translateX(20%);
+  transform: translateX(16%);
 }
 
 .top-header .top-menu .menu > li {
@@ -96,12 +96,18 @@ header {
   color: #929292;
   line-height: 36px;
   text-align: center;
+  width: 85px;
+  display: inline-block;
 }
 
 .top-header .top-menu .menu > li > a:hover,
 .top-header .top-menu .menu > li > a.active {
-  text-shadow: 0 0 1px #333;
+  text-shadow: 0 0 1px #888;
 }
+
+/* .top-header .top-menu .menu > li > a:hover .sub-menu {
+  display: block;
+} */
 
 .top-header .top-menu .menu > li > a.active::after {
   content: "";
@@ -110,7 +116,7 @@ header {
   border-radius: 1px;
   background-color: #025af5;
   position: absolute;
-  bottom: -13px;
+  bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
   box-shadow: 0 0 10px #0159f5;
@@ -123,7 +129,7 @@ header {
   border-radius: 1px;
   background-color: #025af5;
   position: absolute;
-  bottom: -13px;
+  bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
   box-shadow: 0 0 10px #0159f5;
@@ -135,7 +141,7 @@ header {
   line-height: 36px;
   color: #cdcdcd;
   font-weight: 300;
-  margin: 0 18px;
+  margin: 0 10px;
 }
 
 .top-header .top-menu .menu > li:last-child::after {
@@ -456,10 +462,10 @@ header {
   position: absolute;
   top: 17px;
   left: 18px;
-  background: url("/Flex/icons/select-arrow.svg");
+  background: url("/icons/select-arrow.svg");
 }
 
-.form form .search input {
+.form form .search input[type="search"] {
   width: 100%;
   height: 42px;
   border-radius: 21px;
@@ -487,10 +493,23 @@ header {
   position: absolute;
   top: 11px;
   left: 20px;
-  background: url("/Flex/icons/search.svg");
+  background: url("/icons/search.svg");
   cursor: pointer;
 }
 
+.form form .search input[type="submit"]:visited {
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  width: 19px;
+  height: 19px;
+  background: transparent;
+  z-index: 5;
+}
+
+.form form .search input[type="submit"]:visited {
+  border: none;
+}
 /****************************** blog ******************************/
 .blog {
   display: grid;
@@ -541,7 +560,7 @@ header {
   content: "";
   width: 15px;
   height: 14px;
-  background: url("/Flex/images/blog/time-bg-ct.png");
+  background: url("/images/blog/time-bg-ct.png");
   position: absolute;
   right: 26px;
 }
@@ -729,6 +748,7 @@ header {
   position: absolute;
   top: 10px;
   right: 10px;
+  width: 40px;
   cursor: pointer;
 }
 
@@ -750,9 +770,50 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: 1px solid rgba(2, 90, 245, 0.6);
-  width: 120%;
-  height: 120%;
+  /* border: 1px solid rgba(2, 90, 245, 0.6); */
+  /* width: 120%;
+  height: 120%; */
+  animation: play-border 1.5s linear infinite;
+}
+
+@keyframes play-border {
+  0% {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(2, 90, 245, 0);
+  }
+
+  50% {
+    width: 115%;
+    height: 115%;
+    border: 4px solid rgba(2, 90, 245, 0.6);
+  }
+
+  100% {
+    width: 130%;
+    height: 130%;
+    border: 1px solid rgba(2, 90, 245, 0);
+  }
+}
+
+@-webkit-keyframes play-border {
+  0% {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(2, 90, 245, 0);
+  }
+
+  50% {
+    width: 115%;
+    height: 115%;
+    border: 4px solid rgba(2, 90, 245, 0.6);
+  }
+
+  100% {
+    width: 130%;
+    height: 130%;
+    border: 1px solid rgba(2, 90, 245, 0);
+  }
 }
 
 .blog-item.video .play .play-btn-img {

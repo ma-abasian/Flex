@@ -1,17 +1,22 @@
-@import url(/Flex/WebFonts/css/fontiran.css);
+/*_ mixed-in for ( display=flex; flex=1;)_*/
+/*_ mixed-in for ( display=flex;)_*/
+/*_ mixed-in for ( display=flex; - up to down = center , right to left = center )_*/
+/*_ mixed-in for ( display=flex; - up to down = center , right to left = space-between )_*/
+@import url(/WebFonts/css/fontiran.css);
 /******* header menu(sub-menu) *******/
 .top-header .top-menu .menu .sub-menu {
+  display: none;
   background-color: #fff;
   -webkit-box-shadow: 0 0 10px rgba(119, 119, 119, 0.5);
-  box-shadow: 0 0 10px rgba(119, 119, 119, 0.5);
+          box-shadow: 0 0 10px rgba(119, 119, 119, 0.5);
   border-radius: 17px;
-  width: 270px;
+  width: 250px;
   position: absolute;
   bottom: 0;
-  right: -70px;
-  -webkit-transform: translateY(110%);
-  transform: translateY(110%);
-  z-index: 99999;
+  right: 0;
+  -webkit-transform: translate(20%, 111%);
+          transform: translate(20%, 111%);
+  z-index: 999;
 }
 
 .top-header .top-menu .menu .sub-menu::after {
@@ -22,18 +27,73 @@
   border-width: 0 13px 13px 13px;
   border-color: transparent transparent #fff transparent;
   position: absolute;
-  top: -13px;
-  right: 0;
-  left: 0;
+  top: -12px;
+  right: 80px;
   margin: 0 auto;
 }
 
 .top-header .top-menu .menu .sub-menu li {
-  height: 60px;
   border-bottom: 1px dashed #929292;
-  padding: 0 10px;
+}
+
+.top-header .top-menu .menu .sub-menu li:last-child {
+  border-bottom: none;
 }
 
 .top-header .top-menu .menu .sub-menu li a {
   color: #929292;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 15px;
+  font-size: 13px;
+}
+
+.top-header .top-menu .menu .sub-menu li a:hover {
+  text-shadow: 0 0 1px #bbbbbb;
+}
+
+.top-header .top-menu .menu .sub-menu li a .sub-menu-icon {
+  margin-left: 10px;
+  height: 40px;
+  width: 30px;
+  background-color: rgba(86, 199, 110, 0.3);
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -moz-flex;
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.top-header .top-menu .menu .sub-menu li a .title {
+  color: #929292;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.top-header .top-menu .menu .sub-menu li a .text {
+  width: 170px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.top-header .top-menu .menu .sub-menu li a i.flex-icons8-key {
+  color: #56c76e;
+  display: block;
 }
