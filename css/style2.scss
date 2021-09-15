@@ -1,0 +1,79 @@
+@import "base";
+@import url(/WebFonts/css/fontiran.css);
+
+/******* header menu(sub-menu) *******/
+.top-header .top-menu .menu {
+  .sub-menu {
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba($color: #777777, $alpha: 0.5);
+    border-radius: 17px;
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(20%, 111%);
+    z-index: 999;
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 13px 13px 13px;
+      border-color: transparent transparent #fff transparent;
+      position: absolute;
+      top: -12px;
+      right: 80px;
+      margin: 0 auto;
+    }
+
+    li {
+      border-bottom: 1px dashed #929292;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      a {
+        color: #929292;
+        display: flex;
+        align-items: center;
+        padding: 20px 15px;
+        font-size: 13px;
+
+        &:hover {
+          text-shadow: 0 0 1px #bbbbbb;
+        }
+
+        .sub-menu-icon {
+          margin-left: 10px;
+          height: 40px;
+          width: 30px;
+          background-color: rgba(86, 199, 110, 0.3);
+          @include flex-center-center;
+          border-radius: 15px;
+        }
+
+        .title {
+          color: #929292;
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 3px;
+        }
+
+        .text {
+          width: 170px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        i.flex-icons8-key {
+          color: #56c76e;
+          display: block;
+        }
+      }
+    }
+  }
+}
