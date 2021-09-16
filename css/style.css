@@ -514,7 +514,7 @@ header {
 .blog {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 26px;
+  grid-gap: 25px;
 }
 
 .blog-item {

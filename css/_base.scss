@@ -166,14 +166,16 @@
 //   min-height: 245px;
 // }
 // /*===================== [ color (sass) ] ===========================*/
-// $pvn-blue: #025af5;
-// $pvn-gray: #929292;
-// $pvn-gray-dark: #505050;
-// $pvn-gray-md: #ebf2ff;
-// $pvn-bg-green: #ecfcfb;
-// $pvn-bg-red: #fef5f6;
-// $pvn-bg-yellow: #fcf9ec;
-// $pvn-bg-blue: #ecf7fc;
+
+$pvn-blue0: #025af5;
+$pvn-blue1: #1768f6;
+$pvn-gray: #929292;
+$pvn-gray-dark: #505050;
+$pvn-gray-md: #ebf2ff;
+$pvn-bg-green: #ecfcfb;
+$pvn-bg-red: #fef5f6;
+$pvn-bg-yellow: #fcf9ec;
+$pvn-bg-blue: #ecf7fc;
 // /*======================= [ mixed-in (sass) ] ============================*/
 /*_ mixed-in for ( display=flex; flex=1;)_*/
 @mixin flex-1 {
@@ -208,6 +210,11 @@
 @mixin flex-center-between {
   @include flex;
   @include align-items(center);
+  @include justify-content(space-between);
+}
+@mixin flex-start-between {
+  @include flex;
+  @include align-items(flex-start);
   @include justify-content(space-between);
 }
 @mixin justify-self-flex-end {

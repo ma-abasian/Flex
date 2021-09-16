@@ -1,11 +1,10 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Flex";
-  src: url("fonts/Flex.eot?uvh21q");
-  src: url("fonts/Flex.eot?uvh21q#iefix") format("embedded-opentype"),
-    url("fonts/Flex.ttf?uvh21q") format("truetype"),
-    url("fonts/Flex.woff?uvh21q") format("woff"),
-    url("fonts/Flex.svg?uvh21q#Flex") format("svg");
+  src: url("fonts/Flex.eot?7ps6qs");
+  src: url("fonts/Flex.eot?7ps6qs#iefix") format("embedded-opentype"),
+    url("fonts/Flex.ttf?7ps6qs") format("truetype"),
+    url("fonts/Flex.woff?7ps6qs") format("woff"),
+    url("fonts/Flex.svg?7ps6qs#Flex") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -20,61 +19,72 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.flex-call:before {
+  content: "\e90f";
+  color: #025af5;
+}
+.flex-instagram:before {
+  content: "\e90b";
+  color: #dddddd;
+}
+.flex-linkedin:before {
+  content: "\e90c";
+  color: #1768f6;
+}
+.flex-twitter:before {
+  content: "\e90d";
+  color: #dddddd;
+}
+.flex-whatsapp:before {
+  content: "\e90e";
+  color: #dddddd;
+}
 .flex-arrow:before {
-  content: "";
+  content: "\e900";
   color: #919191;
 }
-
 .flex-card:before {
-  content: "";
+  content: "\e901";
   color: #21c38b;
 }
-
 .flex-icons8-key:before {
-  content: "";
+  content: "\e902";
 }
-
 .flex-play:before {
-  content: "";
+  content: "\e903";
   color: #fff;
 }
-
 .flex-profile:before {
-  content: "";
+  content: "\e904";
   color: #fff;
 }
-
 .flex-profile-blue:before {
-  content: "";
+  content: "\e905";
   color: #025af5;
 }
-
 .flex-search:before {
-  content: "";
+  content: "\e906";
   color: #025af5;
 }
-
 .flex-select-arrow:before {
-  content: "";
+  content: "\e907";
   color: #505050;
 }
-
 .flex-time:before {
-  content: "";
+  content: "\e908";
   color: #fff;
 }
-
 .flex-time-gray:before {
-  content: "";
+  content: "\e909";
   color: #929292;
 }
-
 .flex-user:before {
-  content: "";
+  content: "\e90a";
   color: #1768f6;
 }

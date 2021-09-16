@@ -41,7 +41,7 @@
             timer[timerAttr] = setTimeout(function () {
                 $('> .sub-menu',tag).fadeIn(0);
                 
-            }, 300);
+            }, 200);
         }, function () {
             var tag = $(this);
             
@@ -51,5 +51,5 @@
             timer[timerAttr] = setTimeout(function () {
                 $('> .sub-menu',tag).fadeOut(0);
 
-            }, 300);
+            }, 200);
         });

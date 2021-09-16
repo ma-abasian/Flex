@@ -12,7 +12,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    transform: translate(20%, 111%);
+    transform: translate(20%, 105%);
     z-index: 999;
 
     &::after {
@@ -29,14 +29,14 @@
     }
 
     li {
-      border-bottom: 1px dashed #929292;
+      border-bottom: 1px dashed $pvn-gray;
 
       &:last-child {
         border-bottom: none;
       }
 
       a {
-        color: #929292;
+        color: $pvn-gray;
         display: flex;
         align-items: center;
         padding: 20px 15px;
@@ -73,6 +73,204 @@
           color: #56c76e;
           display: block;
         }
+      }
+    }
+  }
+}
+
+/****************************** footer ******************************/
+
+footer {
+  position: relative;
+  margin-top: 50px; //temp
+  background-color: #f8f9fa;
+}
+
+/******* call of footer *******/
+
+footer .call {
+  width: 510px;
+  height: 110px;
+  background: url(/images/footer/footer-bg.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  .call-content {
+    @include flex-center-center;
+    position: absolute;
+    right: 75px;
+    top: 17px;
+
+    i {
+      @include flex-center-center;
+      font-size: 20px;
+      width: 42px;
+      height: 42px;
+      border-radius: 21px;
+      background-color: #ebf2ff;
+    }
+
+    .text {
+      margin-right: 10px;
+    }
+
+    .text p {
+      font-size: 14px;
+      line-height: 18px;
+      color: $pvn-blue0;
+
+      &:nth-of-type(2) {
+        font-size: 16px;
+        letter-spacing: 2px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/******* content of footer *******/
+
+footer .content {
+  height: 350px;
+  @include flex-center-between;
+  color: $pvn-gray-dark;
+  padding: 45px 0 30px 0;
+  font-size: 13px;
+
+  // all titles
+  // all titles
+
+  .title {
+    font-size: 14px;
+    color: #025af5;
+    font-weight: bold;
+  }
+
+  // about of content
+  // about of content
+
+  .about {
+    height: 100%;
+    width: 30%;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: justify;
+
+    .logo {
+      margin-bottom: 10px;
+    }
+  }
+
+  // services of content
+  // services of content
+
+  .services {
+    height: 85%;
+    width: 12%;
+    @include flex-start-between;
+    @include flex-direction(column);
+    padding-right: 55px;
+
+    .links {
+      height: 80%;
+      @include flex-start-between;
+      @include flex-direction(column);
+
+      a {
+        color: $pvn-gray-dark;
+
+        &:hover {
+          text-shadow: 0 0 2px #888;
+        }
+      }
+    }
+  }
+
+  .services-2 {
+    padding-right: 30px;
+  }
+
+  // symbols of content
+  // symbols of content
+
+  .symbols {
+    width: 32%;
+    height: 85%;
+    @include flex-start-between;
+    @include flex-direction(column);
+
+    .symbols-img {
+      width: 100%;
+      @include flex-center-between;
+    }
+
+    .symbols-img div {
+      @include flex-center-center;
+      width: 124px;
+      height: 128px;
+      border-radius: 21px;
+      background-color: #ffffff;
+    }
+  }
+
+  .social {
+    width: 100%;
+    @include flex-center-between;
+
+    a {
+      font-size: 26px;
+      position: relative;
+      &::before {
+        vertical-align: middle;
+      }
+
+      &:hover {
+        text-shadow: 0 0 2px $pvn-gray;
+      }
+
+      span {
+        margin-left: 5px;
+        font-family: iranyekan !important;
+        font-size: 18px;
+        color: $pvn-blue1;
+      }
+
+      &.flex-linkedin::after {
+        content: "";
+        width: 65%;
+        border: 1px dashed $pvn-blue1;
+        transform: scaleX(1.5) translate(34%, 0);
+        position: absolute;
+        bottom: -8px;
+        right: 50%;
+      }
+
+      &.flex-linkedin:hover {
+        text-shadow: 0 0 2px $pvn-blue1;
+      }
+    }
+  }
+}
+
+/******* footer of footer *******/
+
+footer .footer-footer {
+  padding: 15px 0 25px 0;
+  border-top: 1px solid #ebebeb;
+  @include flex;
+  @include justify-content(space-between);
+  @include align-items(flex-end);
+  font-size: 12px;
+  color: $pvn-gray-dark;
+  .left {
+    p {
+      direction: ltr !important;
+
+      a {
+        font-size: 12px;
+        text-decoration: underline;
+        color: $pvn-blue0;
+        font-weight: bold;
       }
     }
   }
