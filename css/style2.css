@@ -157,6 +157,7 @@
 
 .container .pagination ul li.line {
   height: 0;
+  width: 25px;
 }
 
 .container .pagination ul .flex-right-arrow {
