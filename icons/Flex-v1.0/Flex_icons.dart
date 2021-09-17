@@ -12,6 +12,8 @@ class Flex {
 
   static const String _fontFamily = 'Flex';
 
+  static const IconData left_arrow = IconData(0xe910, fontFamily: _fontFamily);
+  static const IconData right_arrow = IconData(0xe911, fontFamily: _fontFamily);
   static const IconData call = IconData(0xe90f, fontFamily: _fontFamily);
   static const IconData instagram = IconData(0xe90b, fontFamily: _fontFamily);
   static const IconData linkedin = IconData(0xe90c, fontFamily: _fontFamily);

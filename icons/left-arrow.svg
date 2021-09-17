@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 12" width="7" height="12">
+	<title>pagenumber</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="pagenumber">
+		<g id="2">
+			<path id="icon" class="shp0" d="M6.71 10.55C7.09 10.89 7.08 11.44 6.69 11.77C6.31 12.09 5.71 12.09 5.33 11.77L0.85 7.83C-0.29 6.83 -0.29 5.2 0.85 4.2L5.33 0.26C5.72 -0.06 6.34 -0.05 6.71 0.29C7.08 0.62 7.08 1.15 6.71 1.48L2.23 5.41C1.85 5.74 1.85 6.29 2.23 6.62L6.71 10.55Z" />
+		</g>
+	</g>
+</svg>

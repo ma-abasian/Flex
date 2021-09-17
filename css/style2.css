@@ -6,7 +6,7 @@
 /******* header menu(sub-menu) *******/
 .top-header .top-menu .menu .sub-menu {
   display: none;
-  background-color: #fff;
+  background-color: #ffffff;
   -webkit-box-shadow: 0 0 10px rgba(119, 119, 119, 0.5);
           box-shadow: 0 0 10px rgba(119, 119, 119, 0.5);
   border-radius: 17px;
@@ -25,7 +25,7 @@
   height: 0;
   border-style: solid;
   border-width: 0 13px 13px 13px;
-  border-color: transparent transparent #fff transparent;
+  border-color: transparent transparent #ffffff transparent;
   position: absolute;
   top: -12px;
   right: 80px;
@@ -98,10 +98,88 @@
   display: block;
 }
 
+/****************************** blog pagination ******************************/
+.container .pagination {
+  width: 100%;
+  margin: 60px 0;
+}
+
+.container .pagination ul {
+  direction: ltr !important;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -moz-flex;
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 27%;
+  margin: 0 auto;
+}
+
+.container .pagination ul li {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -moz-flex;
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  font-size: 14px;
+  color: #929292;
+}
+
+.container .pagination ul li.active {
+  background-color: #025af5;
+  color: #ffffff;
+}
+
+.container .pagination ul li.line {
+  height: 0;
+}
+
+.container .pagination ul .flex-right-arrow {
+  width: 54px;
+  height: 54px;
+  border-radius: 27px;
+  -webkit-filter: drop-shadow(3px 5.196px 4.5px rgba(0, 0, 0, 0.06));
+          filter: drop-shadow(3px 5.196px 4.5px rgba(0, 0, 0, 0.06));
+  background-color: #ffffff;
+}
+
+.container .pagination ul .flex-left-arrow {
+  width: 54px;
+  height: 54px;
+  border-radius: 27px;
+  -webkit-filter: drop-shadow(3px 5.196px 4.5px rgba(0, 0, 0, 0.06));
+          filter: drop-shadow(3px 5.196px 4.5px rgba(0, 0, 0, 0.06));
+  background-color: #055bf5;
+}
+
 /****************************** footer ******************************/
 footer {
   position: relative;
-  margin-top: 50px;
   background-color: #f8f9fa;
 }
 
@@ -269,7 +347,7 @@ footer .content .services .links a {
 }
 
 footer .content .services .links a:hover {
-  text-shadow: 0 0 2px #888;
+  text-shadow: 0 0 2px #888888;
 }
 
 footer .content .services-2 {

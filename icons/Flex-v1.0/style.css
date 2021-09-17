@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Flex";
-  src: url("fonts/Flex.eot?7ps6qs");
-  src: url("fonts/Flex.eot?7ps6qs#iefix") format("embedded-opentype"),
-    url("fonts/Flex.ttf?7ps6qs") format("truetype"),
-    url("fonts/Flex.woff?7ps6qs") format("woff"),
-    url("fonts/Flex.svg?7ps6qs#Flex") format("svg");
+  src: url("fonts/Flex.eot?cmjl5a");
+  src: url("fonts/Flex.eot?cmjl5a#iefix") format("embedded-opentype"),
+    url("fonts/Flex.ttf?cmjl5a") format("truetype"),
+    url("fonts/Flex.woff?cmjl5a") format("woff"),
+    url("fonts/Flex.svg?cmjl5a#Flex") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.flex-left-arrow:before {
+  content: "\e910";
+  color: #fff;
+}
+.flex-right-arrow:before {
+  content: "\e911";
+  color: #035af5;
+}
 .flex-call:before {
   content: "\e90f";
   color: #025af5;
