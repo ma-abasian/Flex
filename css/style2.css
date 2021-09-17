@@ -155,6 +155,11 @@
   color: #ffffff;
 }
 
+.container .pagination ul li:not(.flex):hover {
+  background-color: #025af5;
+  color: #ffffff;
+}
+
 .container .pagination ul li.line {
   height: 0;
   width: 25px;
