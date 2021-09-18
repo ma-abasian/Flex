@@ -215,22 +215,18 @@
 
                 <div class="member">
                     <div class="user">
-                        <span class="icon">
-                            <img src="images/header/profile/icon.svg" alt="profile">
-                        </span>
+                        <i class="flex flex-user"></i>
                         <span class="text">
                             حساب کاربری
                         </span>
-                        <span class="icon icon-arrow">
-                            <img src="images/header/profile/arrow.svg" alt="arrow">
-                        </span>
+                        <a href="#">
+                            <i class="flex flex-arrow"></i>
+                        </a>
                     </div>
 
-
-                    <div class="card">
-                        <img src="images/header/card/icon.svg" alt="card">
-                    </div>
-
+                    <a href="#">
+                        <i class="card flex flex-card"></i>
+                    </a>
 
                 </div>
             </div>
@@ -240,7 +236,7 @@
     <section class="sec sec-slider container">
 
         <div class="latest">
-            <img src="images/latest/pic.png" alt="latest">
+            <img src="images/latest/pic.jpg" alt="latest">
             <div class="text">
                 <h2 class="">
                     ۷ کتابی که به توصیه‌ی
@@ -260,7 +256,7 @@
         </div>
         <div class="slider">
             <div class="slider-content">
-                <img src="images/slider/pic.png" alt="slider" class="pic">
+                <img src="images/slider/pic.jpg" alt="slider" class="pic">
 
                 <div class="text">
 
@@ -367,7 +363,7 @@
         <div class="blog">
             <div class="blog-item first">
                 <div class="blog-img">
-                    <img src="images/blog/pic (1).png" alt="blog-image">
+                    <img src="images/blog/pic_1.jpg" alt="blog-image">
                     <div class="blog-img-time">
                         <span>
                             ۷
@@ -424,7 +420,7 @@
 
             <div class="blog-item">
                 <div class="blog-img">
-                    <img src="images/blog/pic (2).png" alt="blog-image">
+                    <img src="images/blog/pic_2.jpg" alt="blog-image">
                     <div class="blog-img-time">
                         <span>
                             ۷
@@ -481,7 +477,7 @@
 
             <div class="blog-item third">
                 <div class="blog-img">
-                    <img src="images/blog/pic (3).png" alt="blog-image">
+                    <img src="images/blog/pic_3.jpg" alt="blog-image">
                     <div class="blog-img-time">
                         <span>
                             ۷
@@ -594,7 +590,7 @@
 
             <div class="blog-item first">
                 <div class="blog-img">
-                    <img src="images/blog/pic (4).png" alt="blog-image">
+                    <img src="images/blog/pic_4.jpg" alt="blog-image">
                     <div class="blog-img-time">
                         <span>
                             ۷
@@ -650,7 +646,7 @@
 
             <div class="blog-item">
                 <div class="blog-img">
-                    <img src="images/blog/pic (5).png" alt="blog-image">
+                    <img src="images/blog/pic_5.jpg" alt="blog-image">
                     <div class="blog-img-time">
                         <span>
                             ۷
@@ -706,13 +702,13 @@
 
             <div class="blog-item video">
                 <div class="blog-img">
-                    <img src="images/blog/pic (6).png" alt="blog-image">
+                    <img src="images/blog/pic_6.jpg" alt="blog-image">
                 </div>
 
                 <div class="play">
                     <div class="play-btn">
                         <img class="play-btn-img" src="icons/play.svg" alt="play"
-                            onclick="playPause('video/sample-5s.mp4')">
+                            onclick="playPause('video/video_1.mp4')">
                     </div>
                 </div>
 
@@ -757,7 +753,7 @@
 
             <div class="blog-item first">
                 <div class="blog-img">
-                    <img src="images/blog/pic (7).png" alt="blog-image">
+                    <img src="images/blog/pic_7.jpg" alt="blog-image">
                     <div class="blog-img-time">
                         <span>
                             ۷
@@ -813,7 +809,7 @@
 
             <div class="blog-item">
                 <div class="blog-img">
-                    <img src="images/blog/pic (8).png" alt="blog-image">
+                    <img src="images/blog/pic_8.jpg" alt=" blog-image">
                     <div class="blog-img-time">
                         <span>
                             ۷
@@ -869,7 +865,7 @@
             <div class="blog-item third">
 
                 <div class="blog-img">
-                    <img src="images/blog/pic (9).png" alt="blog-image">
+                    <img src="images/blog/pic_9.jpg" alt="blog-image">
                     <div class="blog-img-time">
                         <span>
                             ۷
@@ -1057,29 +1053,33 @@
                     <div class="symbols-img">
 
                         <div>
-                            <img src="images/footer/pic(1).png" alt="">
+                            <img src="images/footer/pic_1.png" alt="">
 
                         </div>
 
                         <div>
-                            <img src="images/footer/pic(2).png" alt="">
+                            <img src="images/footer/pic_2.png" alt="">
 
                         </div>
 
                         <div>
-                            <img src="images/footer/pic(3).png" alt="">
+                            <img src="images/footer/pic_3.png" alt="">
 
                         </div>
 
                     </div>
-                    <div class="social">
-                        <span>
+                    <div class="social" id="social">
+                        <div class="social-title">
                             شبکه‌های اجتماعی
-                        </span>
-                        <a href="#" class="icon flex flex-instagram"></a>
-                        <a href="#" class="icon flex flex-linkedin"><span>Pavilionteam</span></a>
-                        <a href="#" class="icon flex flex-twitter"></a>
-                        <a href="#" class="icon flex flex-whatsapp"></a>
+                        </div>
+                        <span class="icon flex flex-whatsapp" onclick="social_click(this)"><a
+                                href="#">Pavilionteam</a></span>
+                        <span class="icon flex flex-twitter" onclick="social_click(this)"><a
+                                href="#">Pavilionteam</a></span>
+                        <span class="icon flex flex-linkedin" onclick="social_click(this)"><a
+                                href="#">Pavilionteam</a></span>
+                        <span class="icon flex flex-instagram" onclick="social_click(this)"><a
+                                href="#">Pavilionteam</a></span>
                     </div>
                 </div>
             </div>
@@ -1105,7 +1105,7 @@
 
     <div id="videoPlayer">
         <video width="100%" id="myVideo" controls>
-            <source src="video/sample-5s.mp4" type="video/mp4">
+            <source src="video/video_1.mp4" type="video/mp4">
             Your browser does not support HTML video.
         </video>
         <img class="close-btn" src="icons/icons8-close-64.gif" alt="close" onclick="stopVideo()">

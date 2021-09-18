@@ -444,28 +444,40 @@ footer .content .social {
   justify-content: space-between;
 }
 
-footer .content .social a {
-  font-size: 26px;
-  position: relative;
+footer .content .social .social-title {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
 }
 
-footer .content .social a::before {
+footer .content .social span {
+  font-size: 26px;
+  position: relative;
+  cursor: pointer;
+}
+
+footer .content .social span::before {
   vertical-align: middle;
 }
 
-footer .content .social a:hover {
-  text-shadow: 0 0 2px #929292;
+footer .content .social span:hover::before {
+  color: #1768f6;
 }
 
-footer .content .social a span {
+footer .content .social span a {
+  display: none;
   margin-left: 5px;
   font-family: iranyekan !important;
   font-size: 18px;
   color: #1768f6;
 }
 
-footer .content .social a.flex-linkedin::after {
+footer .content .social span.active::before {
+  color: #1768f6;
+}
+
+footer .content .social span.active::after {
   content: "";
+  cursor: default;
   width: 65%;
   border: 1px dashed #1768f6;
   -webkit-transform: scaleX(1.5) translate(34%, 0);
@@ -473,10 +485,6 @@ footer .content .social a.flex-linkedin::after {
   position: absolute;
   bottom: -8px;
   right: 50%;
-}
-
-footer .content .social a.flex-linkedin:hover {
-  text-shadow: 0 0 2px #1768f6;
 }
 
 /******* footer of footer *******/

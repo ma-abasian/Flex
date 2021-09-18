@@ -27,7 +27,7 @@
 
 .flex-left-arrow:before {
   content: "\e910";
-  color: #fff;
+  color: #ffffff;
 }
 .flex-right-arrow:before {
   content: "\e911";
@@ -43,7 +43,7 @@
 }
 .flex-linkedin:before {
   content: "\e90c";
-  color: #1768f6;
+  color: #dddddd;
 }
 .flex-twitter:before {
   content: "\e90d";

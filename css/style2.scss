@@ -270,36 +270,45 @@ footer .content {
     width: 100%;
     @include flex-center-between;
 
-    a {
+    .social-title {
+      transform: translateY(1px);
+    }
+
+    span {
       font-size: 26px;
       position: relative;
+      cursor: pointer;
+
       &::before {
         vertical-align: middle;
       }
 
-      &:hover {
-        text-shadow: 0 0 2px $pvn-gray;
+      &:hover::before {
+        color: $pvn-blue1;
       }
 
-      span {
+      a {
+        display: none;
         margin-left: 5px;
         font-family: iranyekan !important;
         font-size: 18px;
         color: $pvn-blue1;
       }
 
-      &.flex-linkedin::after {
-        content: "";
-        width: 65%;
-        border: 1px dashed $pvn-blue1;
-        transform: scaleX(1.5) translate(34%, 0);
-        position: absolute;
-        bottom: -8px;
-        right: 50%;
-      }
-
-      &.flex-linkedin:hover {
-        text-shadow: 0 0 2px $pvn-blue1;
+      &.active {
+        &::before {
+          color: $pvn-blue1;
+        }
+        &::after {
+          content: "";
+          cursor: default;
+          width: 65%;
+          border: 1px dashed $pvn-blue1;
+          transform: scaleX(1.5) translate(34%, 0);
+          position: absolute;
+          bottom: -8px;
+          right: 50%;
+        }
       }
     }
   }
