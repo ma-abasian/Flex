@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Flex";
   src: url("fonts/Flex.eot?cmjl5a");
@@ -13,86 +14,102 @@
 .flex {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "Flex" !important;
-  speak: never;
+  /* speak: never; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .flex-left-arrow:before {
-  content: "\e910";
-  color: #ffffff;
-}
-.flex-right-arrow:before {
-  content: "\e911";
+  content: "";
   color: #035af5;
 }
+
+.flex-right-arrow:before {
+  content: "";
+  color: #035af5;
+}
+
 .flex-call:before {
-  content: "\e90f";
+  content: "";
   color: #025af5;
 }
+
 .flex-instagram:before {
-  content: "\e90b";
+  content: "";
   color: #dddddd;
 }
+
 .flex-linkedin:before {
-  content: "\e90c";
+  content: "";
   color: #dddddd;
 }
+
 .flex-twitter:before {
-  content: "\e90d";
+  content: "";
   color: #dddddd;
 }
+
 .flex-whatsapp:before {
-  content: "\e90e";
+  content: "";
   color: #dddddd;
 }
+
 .flex-arrow:before {
-  content: "\e900";
+  content: "";
   color: #919191;
 }
+
 .flex-card:before {
-  content: "\e901";
+  content: "";
   color: #21c38b;
 }
+
 .flex-icons8-key:before {
-  content: "\e902";
+  content: "";
 }
+
 .flex-play:before {
-  content: "\e903";
+  content: "";
   color: #fff;
 }
+
 .flex-profile:before {
-  content: "\e904";
+  content: "";
   color: #fff;
 }
+
 .flex-profile-blue:before {
-  content: "\e905";
+  content: "";
   color: #025af5;
 }
+
 .flex-search:before {
-  content: "\e906";
+  content: "";
   color: #025af5;
 }
+
 .flex-select-arrow:before {
-  content: "\e907";
+  content: "";
   color: #505050;
 }
+
 .flex-time:before {
-  content: "\e908";
+  content: "";
   color: #fff;
 }
+
 .flex-time-gray:before {
-  content: "\e909";
+  content: "";
   color: #929292;
 }
+
 .flex-user:before {
-  content: "\e90a";
+  content: "";
   color: #1768f6;
 }

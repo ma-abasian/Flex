@@ -55,11 +55,11 @@ input[type="submit"] {
 }
 
 /****************************** import ******************************/
-@import url(/WebFonts/css/fontiran.css);
+@import url(../WebFonts/css/fontiran.css);
 
 /****************************** container ******************************/
 .container {
-  width: 70%;
+  width: 63%;
   margin: 0 auto;
 }
 
@@ -84,7 +84,7 @@ header {
   display: flex;
   color: #929292;
   font-size: 16px;
-  transform: translateX(16%);
+  transform: translateX(15%);
 }
 
 .top-header .top-menu .menu > li {
@@ -96,7 +96,6 @@ header {
   color: #929292;
   line-height: 36px;
   text-align: center;
-  width: 85px;
   display: inline-block;
 }
 
@@ -104,10 +103,6 @@ header {
 .top-header .top-menu .menu > li > a.active {
   text-shadow: 0 0 1px #888;
 }
-
-/* .top-header .top-menu .menu > li > a:hover .sub-menu {
-  display: block;
-} */
 
 .top-header .top-menu .menu > li > a.active::after {
   content: "";
@@ -141,7 +136,7 @@ header {
   line-height: 36px;
   color: #cdcdcd;
   font-weight: 300;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .top-header .top-menu .menu > li:last-child::after {
@@ -157,6 +152,7 @@ header {
 
 .top-header .member .user {
   width: 175px;
+  height: 42px;
   padding: 0 10px;
   display: flex;
   align-items: center;
@@ -299,7 +295,7 @@ header {
 }
 
 .sec .slider .counter {
-  background: url("/images/slider/other.png") no-repeat;
+  background: url("../images/slider/other.png") no-repeat;
   width: 282px;
   height: 96px;
   position: absolute;
@@ -424,7 +420,7 @@ header {
 }
 
 .form form {
-  width: 49%;
+  width: 51%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -461,10 +457,10 @@ header {
   position: absolute;
   top: 17px;
   left: 18px;
-  background: url("/icons/select-arrow.svg");
+  background: url("../icons/select-arrow.svg");
 }
 
-.form form .search input[type="search"] {
+.form form .search input[type="text"] {
   width: 100%;
   height: 42px;
   border-radius: 21px;
@@ -492,7 +488,7 @@ header {
   position: absolute;
   top: 11px;
   left: 20px;
-  background: url("/icons/search.svg");
+  background: url("../icons/search.svg");
   cursor: pointer;
 }
 
@@ -518,7 +514,7 @@ section .blog {
 
 .blog-item {
   background-color: #ffffff;
-  height: 560px;
+  height: 500px;
   border-radius: 21px;
   box-shadow: 0px 10px 15px rgba(204, 204, 204, 0.1);
   padding: 1.5rem 0;
@@ -559,7 +555,7 @@ section .blog {
   content: "";
   width: 15px;
   height: 14px;
-  background: url("/images/blog/time-bg-ct.png");
+  background: url("../images/blog/time-bg-ct.png");
   position: absolute;
   right: 26px;
 }

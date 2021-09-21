@@ -1,5 +1,5 @@
 @import "base";
-@import url(/WebFonts/css/fontiran.css);
+@import url(../WebFonts/css/fontiran.css);
 
 /******* header menu(sub-menu) *******/
 .top-header .top-menu .menu {
@@ -11,8 +11,8 @@
     width: 250px;
     position: absolute;
     bottom: 0;
-    right: 0;
-    transform: translate(20%, 105%);
+    left: 50%;
+    transform: translate(-50%, 105%);
     z-index: 999;
 
     &::after {
@@ -24,7 +24,7 @@
       border-color: transparent transparent $pvn-bg-white transparent;
       position: absolute;
       top: -12px;
-      right: 80px;
+      right: 81px;
       margin: 0 auto;
     }
 
@@ -86,7 +86,7 @@
   ul {
     direction: ltr !important;
     @include flex-center-between;
-    width: 27%;
+    width: 29%;
     margin: 0 auto;
 
     li {
@@ -98,12 +98,8 @@
       border: 1px solid #eeeeee;
       font-size: 14px;
       color: $pvn-gray;
-      &.active {
-        background-color: $pvn-blue0;
-        color: $pvn-bg-white;
-      }
 
-      &:not(.flex):hover {
+      &.active {
         background-color: $pvn-blue0;
         color: $pvn-bg-white;
       }
@@ -112,22 +108,21 @@
         height: 0;
         width: 25px;
       }
-    }
 
-    .flex-right-arrow {
-      width: 54px;
-      height: 54px;
-      border-radius: 27px;
-      filter: drop-shadow(3px 5.196px 4.5px rgba(0, 0, 0, 0.06));
-      background-color: $pvn-bg-white;
-    }
+      &.flex-left-arrow,
+      &.flex-right-arrow {
+        width: 54px;
+        height: 54px;
+        border-radius: 27px;
+        filter: drop-shadow(3px 5.196px 4.5px rgba(0, 0, 0, 0.06));
+        background-color: $pvn-bg-white;
+      }
 
-    .flex-left-arrow {
-      width: 54px;
-      height: 54px;
-      border-radius: 27px;
-      filter: drop-shadow(3px 5.196px 4.5px rgba(0, 0, 0, 0.06));
-      background-color: #055bf5;
+      &:hover,
+      &:hover:before {
+        background-color: $pvn-blue0;
+        color: $pvn-bg-white !important;
+      }
     }
   }
 }
@@ -142,16 +137,16 @@ footer {
 /******* call of footer *******/
 
 footer .call {
-  width: 510px;
-  height: 110px;
-  background: url(/images/footer/footer-bg.png) no-repeat center;
+  width: 595px;
+  height: 132px;
+  background: url("../images/footer/Folder\ 1.svg") no-repeat center;
   background-size: contain;
   position: absolute;
   left: 0;
   .call-content {
     @include flex-center-center;
     position: absolute;
-    right: 75px;
+    right: 92px;
     top: 17px;
 
     i {
@@ -204,7 +199,7 @@ footer .content {
 
   .about {
     height: 100%;
-    width: 30%;
+    width: 33%;
     font-size: 14px;
     line-height: 30px;
     text-align: justify;
@@ -219,10 +214,8 @@ footer .content {
 
   .services {
     height: 85%;
-    width: 12%;
     @include flex-start-between;
     @include flex-direction(column);
-    padding-right: 55px;
 
     .links {
       height: 80%;
@@ -239,15 +232,11 @@ footer .content {
     }
   }
 
-  .services-2 {
-    padding-right: 30px;
-  }
-
   // symbols of content
   // symbols of content
 
   .symbols {
-    width: 32%;
+    width: 34%;
     height: 85%;
     @include flex-start-between;
     @include flex-direction(column);
@@ -275,7 +264,7 @@ footer .content {
     }
 
     span {
-      font-size: 26px;
+      font-size: 24px;
       position: relative;
       cursor: pointer;
 
@@ -291,7 +280,7 @@ footer .content {
         display: none;
         margin-left: 5px;
         font-family: iranyekan !important;
-        font-size: 18px;
+        font-size: 16px;
         color: $pvn-blue1;
       }
 

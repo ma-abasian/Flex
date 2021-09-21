@@ -60,7 +60,7 @@ $('> li', menu).hover(function () {
 
 var social = document.getElementById("social");
 
-function social_click(tag) {
+function socialClick(tag) {
 
     if ($(tag).hasClass('active')) {
         $('a', social).hide();
