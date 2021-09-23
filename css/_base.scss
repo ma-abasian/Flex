@@ -325,27 +325,28 @@ $pvn-bg-white: #ffffff;
 
   flex-wrap: $value;
 }
-// @mixin transform($property) {
-//   -webkit-transform: $property;
-//   -ms-transform: $property;
-//   -moz-transform: $property;
-//   -o-transform: $property;
-//   transform: $property;
-// }
-// /*_ mixed-in for ( transition effect )_*/
-// @mixin transition3 {
-//   -webkit-transition: 0.3s;
-//   -moz-transition: 0.3s;
-//   -o-transition: 0.3s;
-//   transition: 0.3s;
-// }
-// /*_ mixed-in for ( transition effect )_*/
-// @mixin transition4 {
-//   -webkit-transition: 0.4s;
-//   -moz-transition: 0.4s;
-//   -o-transition: 0.4s;
-//   transition: 0.4s;
-// }
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  -moz-transform: $property;
+  -o-transform: $property;
+  transform: $property;
+}
+/*_ mixed-in for ( transition effect )_*/
+@mixin transition3 {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+/*_ mixed-in for ( transition effect )_*/
+@mixin transition4 {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
 // @mixin inline-flex {
 //   display: -webkit-inline-flex; /* OLD - iOS 6-, Safari 3.1-6 */ /* NEW - Chrome */
 //   display: -webkit-inline-box; /* dont delet ! this is important for safari */

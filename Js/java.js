@@ -32,26 +32,25 @@ function stopVideo() {
 var timer = {};
 var menu = document.getElementById("menu");
 
-$('> li', menu).hover(function () {
-    var tag = $(this);
+$('> li > a', menu).hover(function () {
+    var tag = $(this).parents('.item');
     var timerAttr = tag.attr('data-time');
 
     clearTimeout(timer[timerAttr]);
     timer[timerAttr] = setTimeout(function () {
         $('> .sub-menu',tag).fadeIn(0);
                 
-    }, 200);
+    }, 400);
 }, function () {
 
-    var tag = $(this);
-
+    var tag = $(this).parents('.item');
     var timerAttr = tag.attr('data-time');
     clearTimeout(timer[timerAttr]);
             
     timer[timerAttr] = setTimeout(function () {
         $('> .sub-menu',tag).fadeOut(0);
 
-    }, 200);
+    }, 400);
 });
 
 // footer social

@@ -1,12 +1,16 @@
 @import "variables";
 
 @font-face {
-  font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?cmjl5a');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?cmjl5a#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?cmjl5a') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?cmjl5a') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?cmjl5a##{$icomoon-font-family}') format('svg');
+  font-family: "#{$icomoon-font-family}";
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?cmjl5a");
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.eot?cmjl5a#iefix")
+      format("embedded-opentype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?cmjl5a")
+      format("truetype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?cmjl5a")
+      format("woff"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?cmjl5a##{$icomoon-font-family}")
+      format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -14,7 +18,7 @@
 
 .flex {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: '#{$icomoon-font-family}' !important;
+  font-family: "#{$icomoon-font-family}" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -29,109 +33,108 @@
 
 .flex-left-arrow {
   &:before {
-    content: $flex-left-arrow;     
-    color: #fff;
+    content: $flex-left-arrow;
+    color: #035af5;
   }
 }
 .flex-right-arrow {
   &:before {
-    content: $flex-right-arrow;     
+    content: $flex-right-arrow;
     color: #035af5;
   }
 }
 .flex-call {
   &:before {
-    content: $flex-call;     
+    content: $flex-call;
     color: #025af5;
   }
 }
 .flex-instagram {
   &:before {
-    content: $flex-instagram;     
-    color: #929292;
+    content: $flex-instagram;
+    color: #dddddd;
   }
 }
 .flex-linkedin {
   &:before {
-    content: $flex-linkedin;     
-    color: #1768f6;
+    content: $flex-linkedin;
+    color: #dddddd;
   }
 }
 .flex-twitter {
   &:before {
-    content: $flex-twitter;     
-    color: #929292;
+    content: $flex-twitter;
+    color: #dddddd;
   }
 }
 .flex-whatsapp {
   &:before {
-    content: $flex-whatsapp;     
-    color: #929292;
+    content: $flex-whatsapp;
+    color: #dddddd;
   }
 }
 .flex-arrow {
   &:before {
-    content: $flex-arrow;     
+    content: $flex-arrow;
     color: #919191;
   }
 }
 .flex-card {
   &:before {
-    content: $flex-card;     
+    content: $flex-card;
     color: #21c38b;
   }
 }
 .flex-icons8-key {
   &:before {
-    content: $flex-icons8-key; 
+    content: $flex-icons8-key;
   }
 }
 .flex-play {
   &:before {
-    content: $flex-play;     
+    content: $flex-play;
     color: #fff;
   }
 }
 .flex-profile {
   &:before {
-    content: $flex-profile;     
+    content: $flex-profile;
     color: #fff;
   }
 }
 .flex-profile-blue {
   &:before {
-    content: $flex-profile-blue;     
+    content: $flex-profile-blue;
     color: #025af5;
   }
 }
 .flex-search {
   &:before {
-    content: $flex-search;     
+    content: $flex-search;
     color: #025af5;
   }
 }
 .flex-select-arrow {
   &:before {
-    content: $flex-select-arrow;     
+    content: $flex-select-arrow;
     color: #505050;
   }
 }
 .flex-time {
   &:before {
-    content: $flex-time;     
+    content: $flex-time;
     color: #fff;
   }
 }
 .flex-time-gray {
   &:before {
-    content: $flex-time-gray;     
+    content: $flex-time-gray;
     color: #929292;
   }
 }
 .flex-user {
   &:before {
-    content: $flex-user;     
+    content: $flex-user;
     color: #1768f6;
   }
 }
-

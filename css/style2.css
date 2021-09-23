@@ -2,6 +2,8 @@
 /*_ mixed-in for ( display=flex;)_*/
 /*_ mixed-in for ( display=flex; - up to down = center , right to left = center )_*/
 /*_ mixed-in for ( display=flex; - up to down = center , right to left = space-between )_*/
+/*_ mixed-in for ( transition effect )_*/
+/*_ mixed-in for ( transition effect )_*/
 @import url(../WebFonts/css/fontiran.css);
 /******* header menu(sub-menu) *******/
 .top-header .top-menu .menu .sub-menu {
@@ -118,11 +120,9 @@
   -ms-flex-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 29%;
-  margin: 0 auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .container .pagination ul li {
@@ -143,11 +143,14 @@
   justify-content: center;
   width: 35px;
   height: 35px;
+  margin: 0 5px;
   border-radius: 18px;
   background-color: #ffffff;
   border: 1px solid #eeeeee;
   font-size: 14px;
   color: #929292;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .container .pagination ul li.active {
@@ -169,21 +172,25 @@
   background-color: #ffffff;
 }
 
-.container .pagination ul li:hover, .container .pagination ul li:hover:before {
+.container .pagination ul li:hover {
   background-color: #025af5;
+  color: #ffffff !important;
+}
+
+.container .pagination ul li:hover:before {
   color: #ffffff !important;
 }
 
 /****************************** footer ******************************/
 footer {
   position: relative;
-  background-color: #f8f9fa;
+  background-color: #f9fafb;
 }
 
 /******* call of footer *******/
 footer .call {
-  width: 595px;
-  height: 132px;
+  width: 623px;
+  height: 138px;
   background: url("../images/footer/Folder 1.svg") no-repeat center;
   background-size: contain;
   position: absolute;
@@ -207,8 +214,8 @@ footer .call .call-content {
   -ms-flex-pack: center;
   justify-content: center;
   position: absolute;
-  right: 92px;
-  top: 17px;
+  right: 95px;
+  top: 25px;
 }
 
 footer .call .call-content i {
@@ -246,13 +253,14 @@ footer .call .call-content .text p {
 
 footer .call .call-content .text p:nth-of-type(2) {
   font-size: 16px;
+  margin-top: 3px;
   letter-spacing: 2px;
   font-weight: bold;
 }
 
 /******* content of footer *******/
 footer .content {
-  height: 350px;
+  height: 362px;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   /* OLD - Firefox 19- (buggy but mostly works) */
@@ -281,19 +289,18 @@ footer .content .title {
 
 footer .content .about {
   height: 100%;
-  width: 33%;
+  width: 34%;
   font-size: 14px;
   line-height: 30px;
   text-align: justify;
 }
 
 footer .content .about .logo {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 footer .content .services {
-  height: 85%;
-  width: 12%;
+  height: 86%;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   /* OLD - Firefox 19- (buggy but mostly works) */
@@ -313,11 +320,10 @@ footer .content .services {
   -webkit-box-orient: vertical;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-right: 55px;
 }
 
 footer .content .services .links {
-  height: 80%;
+  height: 78%;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   /* OLD - Firefox 19- (buggy but mostly works) */
@@ -347,13 +353,9 @@ footer .content .services .links a:hover {
   text-shadow: 0 0 2px #888888;
 }
 
-footer .content .services-2 {
-  padding-right: 30px;
-}
-
 footer .content .symbols {
-  width: 34%;
-  height: 85%;
+  width: 36%;
+  height: 86%;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   /* OLD - Firefox 19- (buggy but mostly works) */
@@ -394,7 +396,11 @@ footer .content .symbols .symbols-img {
   justify-content: space-between;
 }
 
-footer .content .symbols .symbols-img div {
+footer .content .symbols .symbols-img > div {
+  width: 128px;
+  height: 128px;
+  border-radius: 21px;
+  background-color: #ffffff;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   /* OLD - Firefox 19- (buggy but mostly works) */
@@ -410,10 +416,13 @@ footer .content .symbols .symbols-img div {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 124px;
-  height: 128px;
-  border-radius: 21px;
-  background-color: #ffffff;
+  font-size: 8px;
+}
+
+footer .content .symbols .symbols-img > div p {
+  margin-top: 5px;
+  text-align: center;
+  color: #929292;
 }
 
 footer .content .social {
@@ -480,7 +489,7 @@ footer .content .social span.active::after {
 
 /******* footer of footer *******/
 footer .footer-footer {
-  padding: 15px 0 25px 0;
+  padding: 18px 0 28px 0;
   border-top: 1px solid #ebebeb;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
