@@ -515,7 +515,7 @@ header {
 section .blog {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px 30px;
+  grid-gap: 18px 30px;
 }
 
 .blog-item {
@@ -688,7 +688,7 @@ section .blog {
 }
 
 .blog-item-wide .content {
-  width: 60%;
+  width: 62%;
   padding: 15px 0px 18px 160px;
   background-image: linear-gradient(
     to left,

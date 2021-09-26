@@ -191,7 +191,7 @@ footer {
 footer .call {
   width: 623px;
   height: 138px;
-  background: url("../images/footer/Folder 1.svg") no-repeat center;
+  background: url("../images/footer/call_bg.svg") no-repeat center;
   background-size: contain;
   position: absolute;
   left: 0;
@@ -450,7 +450,7 @@ footer .content .social .social-title {
 }
 
 footer .content .social span {
-  font-size: 24px;
+  font-size: 26px;
   position: relative;
   cursor: pointer;
 }
