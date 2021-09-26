@@ -341,10 +341,124 @@ footer .footer-footer {
 /****************************** responsive ******************************/
 
 @media #{$break-4xl} {
+  header {
+    padding: 23px 0;
+    margin-bottom: 35px;
+
+    .logo img {
+      max-width: 150px !important;
+    }
+
+    .top-header {
+      .top-menu .menu {
+        font-size: 13px;
+      }
+
+      .member {
+        font-size: 13px;
+
+        .user {
+          width: 145px;
+          height: 35px;
+        }
+
+        .card {
+          width: 35px;
+          height: 35px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
   .sec-slider {
-    .latest,
-    .slider {
-      height: 360px;
+    .slider,
+    .latest {
+      height: 350px;
+    }
+
+    .counter .counter-text .page {
+      font-size: 17px !important;
+    }
+
+    .text {
+      h2 {
+        font-size: 17px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .sec-form {
+    span a {
+      font-size: 16px;
+    }
+  }
+
+  section .blog {
+    grid-gap: 20px 25px;
+
+    .blog-middle {
+      font-size: 13px;
+    }
+
+    .blog-footer {
+      font-size: 11px;
+
+      .btn-blue {
+        height: 25px;
+        width: 95px;
+      }
+
+      .profile img {
+        height: 18px;
+      }
+
+      .time img {
+        height: 18px;
+      }
+    }
+  }
+
+  .pagination {
+    li {
+      width: 30px !important;
+      height: 30px !important;
+
+      &.line {
+        height: 0 !important;
+        width: 23px !important;
+      }
+
+      &.flex-left-arrow,
+      &.flex-right-arrow {
+        height: 50px !important;
+        width: 50px !important;
+      }
+    }
+  }
+
+  footer {
+    .call {
+      width: 585px;
+      height: 130px;
+    }
+    .content {
+      .about {
+        font-size: 13px !important;
+      }
+
+      .symbols-img > div {
+        width: 116px !important;
+        height: 116px !important;
+      }
+
+      .social span {
+        font-size: 22px;
+      }
     }
   }
 }

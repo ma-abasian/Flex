@@ -533,8 +533,87 @@ footer .footer-footer .left p a {
 
 /****************************** responsive ******************************/
 @media (max-width: 1800px) {
-  .sec-slider .latest,
-  .sec-slider .slider {
-    height: 360px;
+  header {
+    padding: 23px 0;
+    margin-bottom: 35px;
+  }
+  header .logo img {
+    max-width: 150px !important;
+  }
+  header .top-header .top-menu .menu {
+    font-size: 13px;
+  }
+  header .top-header .member {
+    font-size: 13px;
+  }
+  header .top-header .member .user {
+    width: 145px;
+    height: 35px;
+  }
+  header .top-header .member .card {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+  .sec-slider .slider,
+  .sec-slider .latest {
+    height: 350px;
+  }
+  .sec-slider .counter .counter-text .page {
+    font-size: 17px !important;
+  }
+  .sec-slider .text h2 {
+    font-size: 17px;
+  }
+  .sec-slider .text p {
+    font-size: 13px;
+  }
+  .sec-form span a {
+    font-size: 16px;
+  }
+  section .blog {
+    grid-gap: 20px 25px;
+  }
+  section .blog .blog-middle {
+    font-size: 13px;
+  }
+  section .blog .blog-footer {
+    font-size: 11px;
+  }
+  section .blog .blog-footer .btn-blue {
+    height: 25px;
+    width: 95px;
+  }
+  section .blog .blog-footer .profile img {
+    height: 18px;
+  }
+  section .blog .blog-footer .time img {
+    height: 18px;
+  }
+  .pagination li {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .pagination li.line {
+    height: 0 !important;
+    width: 23px !important;
+  }
+  .pagination li.flex-left-arrow, .pagination li.flex-right-arrow {
+    height: 50px !important;
+    width: 50px !important;
+  }
+  footer .call {
+    width: 585px;
+    height: 130px;
+  }
+  footer .content .about {
+    font-size: 13px !important;
+  }
+  footer .content .symbols-img > div {
+    width: 116px !important;
+    height: 116px !important;
+  }
+  footer .content .social span {
+    font-size: 22px;
   }
 }
