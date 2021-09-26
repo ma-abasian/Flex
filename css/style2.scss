@@ -337,3 +337,14 @@ footer .footer-footer {
     }
   }
 }
+
+/****************************** responsive ******************************/
+
+@media #{$break-4xl} {
+  .sec-slider {
+    .latest,
+    .slider {
+      height: 360px;
+    }
+  }
+}

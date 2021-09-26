@@ -4,6 +4,16 @@
 /*_ mixed-in for ( display=flex; - up to down = center , right to left = space-between )_*/
 /*_ mixed-in for ( transition effect )_*/
 /*_ mixed-in for ( transition effect )_*/
+/*============================ [ breakpoints for responsive in sass ] ==================================*/
+/* xsm--Extra small  (smart phones, portrait iPhone, portrait 480x320 phones (Android)) */
+/* sm--smart phones, Android phones, landscape iPhone */
+/* sm--smart phones, Android phones, landscape iPhone */
+/* md-- tablet, landscape iPad, lo-res laptops ands desktops */
+/* lg-- hi-res laptops and desktops */
+/* xl-- hi-res laptops and desktops */
+/* 2xl -- Extra large screens, TV */
+/* 3xl -- Extra large screens, TV */
+/* 4xl -- Extra large screens, TV */
 @import url(../WebFonts/css/fontiran.css);
 /******* header menu(sub-menu) *******/
 .top-header .top-menu .menu .sub-menu {
@@ -519,4 +529,12 @@ footer .footer-footer .left p a {
   text-decoration: underline;
   color: #025af5;
   font-weight: bold;
+}
+
+/****************************** responsive ******************************/
+@media (max-width: 1800px) {
+  .sec-slider .latest,
+  .sec-slider .slider {
+    height: 360px;
+  }
 }

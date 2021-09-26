@@ -354,23 +354,23 @@ $pvn-bg-white: #ffffff;
 //   display: -ms-inline-flexbox; /* TWEENER - IE 10 */
 //   display: inline-flex;
 // }
-// /*============================ [ breakpoints for responsive in sass ] ==================================*/
-// /* xsm--Extra small  (smart phones, portrait iPhone, portrait 480x320 phones (Android)) */
+/*============================ [ breakpoints for responsive in sass ] ==================================*/
+/* xsm--Extra small  (smart phones, portrait iPhone, portrait 480x320 phones (Android)) */
 
-// $break-2xsm: "(max-width: 346px)";
-// /* sm--smart phones, Android phones, landscape iPhone */
-// $break-xsm: "(max-width: 480px)";
-// /* sm--smart phones, Android phones, landscape iPhone */
-// $break-sm: "(max-width:  576px)";
-// /* md-- tablet, landscape iPad, lo-res laptops ands desktops */
-// $break-md: "(max-width: 768px)";
-// /* lg-- hi-res laptops and desktops */
-// $break-lg: "(max-width:  992px)";
-// /* xl-- hi-res laptops and desktops */
-// $break-xl: "(max-width: 1140px)";
-// /* 2xl -- Extra large screens, TV */
-// $break-2xl: "(max-width: 1200px)";
-// /* 3xl -- Extra large screens, TV */
-// $break-3xl: "(max-width: 1400px)";
-// /* 4xl -- Extra large screens, TV */
-// $break-4xl: "(max-width: 1800px)";
+$break-2xsm: "(max-width: 346px)";
+/* sm--smart phones, Android phones, landscape iPhone */
+$break-xsm: "(max-width: 480px)";
+/* sm--smart phones, Android phones, landscape iPhone */
+$break-sm: "(max-width:  576px)";
+/* md-- tablet, landscape iPad, lo-res laptops ands desktops */
+$break-md: "(max-width: 768px)";
+/* lg-- hi-res laptops and desktops */
+$break-lg: "(max-width:  992px)";
+/* xl-- hi-res laptops and desktops */
+$break-xl: "(max-width: 1140px)";
+/* 2xl -- Extra large screens, TV */
+$break-2xl: "(max-width: 1200px)";
+/* 3xl -- Extra large screens, TV */
+$break-3xl: "(max-width: 1400px)";
+/* 4xl -- Extra large screens, TV */
+$break-4xl: "(max-width: 1800px)";
