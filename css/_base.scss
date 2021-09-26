@@ -166,14 +166,17 @@
 //   min-height: 245px;
 // }
 // /*===================== [ color (sass) ] ===========================*/
-// $pvn-blue: #025af5;
-// $pvn-gray: #929292;
-// $pvn-gray-dark: #505050;
-// $pvn-gray-md: #ebf2ff;
-// $pvn-bg-green: #ecfcfb;
-// $pvn-bg-red: #fef5f6;
-// $pvn-bg-yellow: #fcf9ec;
-// $pvn-bg-blue: #ecf7fc;
+
+$pvn-blue0: #025af5;
+$pvn-blue1: #1768f6;
+$pvn-gray: #929292;
+$pvn-gray-dark: #505050;
+$pvn-gray-md: #ebf2ff;
+$pvn-bg-green: #ecfcfb;
+$pvn-bg-red: #fef5f6;
+$pvn-bg-yellow: #fcf9ec;
+$pvn-bg-blue: #ecf7fc;
+$pvn-bg-white: #ffffff;
 // /*======================= [ mixed-in (sass) ] ============================*/
 /*_ mixed-in for ( display=flex; flex=1;)_*/
 @mixin flex-1 {
@@ -208,6 +211,11 @@
 @mixin flex-center-between {
   @include flex;
   @include align-items(center);
+  @include justify-content(space-between);
+}
+@mixin flex-start-between {
+  @include flex;
+  @include align-items(flex-start);
   @include justify-content(space-between);
 }
 @mixin justify-self-flex-end {
@@ -317,27 +325,28 @@
 
   flex-wrap: $value;
 }
-// @mixin transform($property) {
-//   -webkit-transform: $property;
-//   -ms-transform: $property;
-//   -moz-transform: $property;
-//   -o-transform: $property;
-//   transform: $property;
-// }
-// /*_ mixed-in for ( transition effect )_*/
-// @mixin transition3 {
-//   -webkit-transition: 0.3s;
-//   -moz-transition: 0.3s;
-//   -o-transition: 0.3s;
-//   transition: 0.3s;
-// }
-// /*_ mixed-in for ( transition effect )_*/
-// @mixin transition4 {
-//   -webkit-transition: 0.4s;
-//   -moz-transition: 0.4s;
-//   -o-transition: 0.4s;
-//   transition: 0.4s;
-// }
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  -moz-transform: $property;
+  -o-transform: $property;
+  transform: $property;
+}
+/*_ mixed-in for ( transition effect )_*/
+@mixin transition3 {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+/*_ mixed-in for ( transition effect )_*/
+@mixin transition4 {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
 // @mixin inline-flex {
 //   display: -webkit-inline-flex; /* OLD - iOS 6-, Safari 3.1-6 */ /* NEW - Chrome */
 //   display: -webkit-inline-box; /* dont delet ! this is important for safari */
@@ -345,23 +354,23 @@
 //   display: -ms-inline-flexbox; /* TWEENER - IE 10 */
 //   display: inline-flex;
 // }
-// /*============================ [ breakpoints for responsive in sass ] ==================================*/
-// /* xsm--Extra small  (smart phones, portrait iPhone, portrait 480x320 phones (Android)) */
+/*============================ [ breakpoints for responsive in sass ] ==================================*/
+/* xsm--Extra small  (smart phones, portrait iPhone, portrait 480x320 phones (Android)) */
 
-// $break-2xsm: "(max-width: 346px)";
-// /* sm--smart phones, Android phones, landscape iPhone */
-// $break-xsm: "(max-width: 480px)";
-// /* sm--smart phones, Android phones, landscape iPhone */
-// $break-sm: "(max-width:  576px)";
-// /* md-- tablet, landscape iPad, lo-res laptops ands desktops */
-// $break-md: "(max-width: 768px)";
-// /* lg-- hi-res laptops and desktops */
-// $break-lg: "(max-width:  992px)";
-// /* xl-- hi-res laptops and desktops */
-// $break-xl: "(max-width: 1140px)";
-// /* 2xl -- Extra large screens, TV */
-// $break-2xl: "(max-width: 1200px)";
-// /* 3xl -- Extra large screens, TV */
-// $break-3xl: "(max-width: 1400px)";
-// /* 4xl -- Extra large screens, TV */
-// $break-4xl: "(max-width: 1800px)";
+$break-2xsm: "(max-width: 346px)";
+/* sm--smart phones, Android phones, landscape iPhone */
+$break-xsm: "(max-width: 480px)";
+/* sm--smart phones, Android phones, landscape iPhone */
+$break-sm: "(max-width:  576px)";
+/* md-- tablet, landscape iPad, lo-res laptops ands desktops */
+$break-md: "(max-width: 768px)";
+/* lg-- hi-res laptops and desktops */
+$break-lg: "(max-width:  992px)";
+/* xl-- hi-res laptops and desktops */
+$break-xl: "(max-width: 1140px)";
+/* 2xl -- Extra large screens, TV */
+$break-2xl: "(max-width: 1200px)";
+/* 3xl -- Extra large screens, TV */
+$break-3xl: "(max-width: 1400px)";
+/* 4xl -- Extra large screens, TV */
+$break-4xl: "(max-width: 1800px)";

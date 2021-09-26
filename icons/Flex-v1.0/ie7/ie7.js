@@ -13,6 +13,13 @@
 		el.innerHTML = '<span style="font-family: \'Flex\'">' + entity + '</span>' + html;
 	}
 	var icons = {
+		'flex-left-arrow': '&#xe910;',
+		'flex-right-arrow': '&#xe911;',
+		'flex-call': '&#xe90f;',
+		'flex-instagram': '&#xe90b;',
+		'flex-linkedin': '&#xe90c;',
+		'flex-twitter': '&#xe90d;',
+		'flex-whatsapp': '&#xe90e;',
 		'flex-arrow': '&#xe900;',
 		'flex-card': '&#xe901;',
 		'flex-icons8-key': '&#xe902;',

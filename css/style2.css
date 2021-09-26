@@ -2,20 +2,32 @@
 /*_ mixed-in for ( display=flex;)_*/
 /*_ mixed-in for ( display=flex; - up to down = center , right to left = center )_*/
 /*_ mixed-in for ( display=flex; - up to down = center , right to left = space-between )_*/
-@import url(/WebFonts/css/fontiran.css);
+/*_ mixed-in for ( transition effect )_*/
+/*_ mixed-in for ( transition effect )_*/
+/*============================ [ breakpoints for responsive in sass ] ==================================*/
+/* xsm--Extra small  (smart phones, portrait iPhone, portrait 480x320 phones (Android)) */
+/* sm--smart phones, Android phones, landscape iPhone */
+/* sm--smart phones, Android phones, landscape iPhone */
+/* md-- tablet, landscape iPad, lo-res laptops ands desktops */
+/* lg-- hi-res laptops and desktops */
+/* xl-- hi-res laptops and desktops */
+/* 2xl -- Extra large screens, TV */
+/* 3xl -- Extra large screens, TV */
+/* 4xl -- Extra large screens, TV */
+@import url(../WebFonts/css/fontiran.css);
 /******* header menu(sub-menu) *******/
 .top-header .top-menu .menu .sub-menu {
   display: none;
-  background-color: #fff;
+  background-color: #ffffff;
   -webkit-box-shadow: 0 0 10px rgba(119, 119, 119, 0.5);
           box-shadow: 0 0 10px rgba(119, 119, 119, 0.5);
   border-radius: 17px;
   width: 250px;
   position: absolute;
   bottom: 0;
-  right: 0;
-  -webkit-transform: translate(20%, 111%);
-          transform: translate(20%, 111%);
+  left: 50%;
+  -webkit-transform: translate(-50%, 105%);
+          transform: translate(-50%, 105%);
   z-index: 999;
 }
 
@@ -25,10 +37,10 @@
   height: 0;
   border-style: solid;
   border-width: 0 13px 13px 13px;
-  border-color: transparent transparent #fff transparent;
+  border-color: transparent transparent #ffffff transparent;
   position: absolute;
   top: -12px;
-  right: 80px;
+  right: 81px;
   margin: 0 auto;
 }
 
@@ -96,4 +108,433 @@
 .top-header .top-menu .menu .sub-menu li a i.flex-icons8-key {
   color: #56c76e;
   display: block;
+}
+
+/****************************** blog pagination ******************************/
+.container .pagination {
+  width: 100%;
+  margin: 60px 0;
+}
+
+.container .pagination ul {
+  direction: ltr !important;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -moz-flex;
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container .pagination ul li {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -moz-flex;
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  margin: 0 5px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  font-size: 14px;
+  color: #929292;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .pagination ul li.active {
+  background-color: #025af5;
+  color: #ffffff;
+}
+
+.container .pagination ul li.line {
+  height: 0;
+  width: 25px;
+}
+
+.container .pagination ul li.flex-left-arrow, .container .pagination ul li.flex-right-arrow {
+  width: 54px;
+  height: 54px;
+  border-radius: 27px;
+  -webkit-filter: drop-shadow(3px 5.196px 4.5px rgba(0, 0, 0, 0.06));
+          filter: drop-shadow(3px 5.196px 4.5px rgba(0, 0, 0, 0.06));
+  background-color: #ffffff;
+}
+
+.container .pagination ul li:hover {
+  background-color: #025af5;
+  color: #ffffff !important;
+}
+
+.container .pagination ul li:hover:before {
+  color: #ffffff !important;
+}
+
+/****************************** footer ******************************/
+footer {
+  position: relative;
+  background-color: #f9fafb;
+}
+
+/******* call of footer *******/
+footer .call {
+  width: 623px;
+  height: 138px;
+  background: url("../images/footer/call_bg.svg") no-repeat center;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+}
+
+footer .call .call-content {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -moz-flex;
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  right: 95px;
+  top: 25px;
+}
+
+footer .call .call-content i {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -moz-flex;
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 20px;
+  width: 42px;
+  height: 42px;
+  border-radius: 21px;
+  background-color: #ebf2ff;
+}
+
+footer .call .call-content .text {
+  margin-right: 10px;
+}
+
+footer .call .call-content .text p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #025af5;
+}
+
+footer .call .call-content .text p:nth-of-type(2) {
+  font-size: 16px;
+  margin-top: 3px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/******* content of footer *******/
+footer .content {
+  height: 362px;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -moz-flex;
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #505050;
+  padding: 45px 0 30px 0;
+  font-size: 13px;
+}
+
+footer .content .title {
+  font-size: 14px;
+  color: #025af5;
+  font-weight: bold;
+}
+
+footer .content .about {
+  height: 100%;
+  width: 34%;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+footer .content .about .logo {
+  margin-bottom: 20px;
+}
+
+footer .content .services {
+  height: 86%;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -moz-flex;
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+footer .content .services .links {
+  height: 78%;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -moz-flex;
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+footer .content .services .links a {
+  color: #505050;
+}
+
+footer .content .services .links a:hover {
+  text-shadow: 0 0 2px #888888;
+}
+
+footer .content .symbols {
+  width: 36%;
+  height: 86%;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -moz-flex;
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+footer .content .symbols .symbols-img {
+  width: 100%;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -moz-flex;
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+footer .content .symbols .symbols-img > div {
+  width: 128px;
+  height: 128px;
+  border-radius: 21px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -moz-flex;
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 8px;
+}
+
+footer .content .symbols .symbols-img > div p {
+  margin-top: 5px;
+  text-align: center;
+  color: #929292;
+}
+
+footer .content .social {
+  width: 100%;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -moz-flex;
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+footer .content .social .social-title {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+footer .content .social span {
+  font-size: 26px;
+  position: relative;
+  cursor: pointer;
+}
+
+footer .content .social span::before {
+  vertical-align: middle;
+}
+
+footer .content .social span:hover::before {
+  color: #1768f6;
+}
+
+footer .content .social span a {
+  display: none;
+  margin-left: 5px;
+  font-family: iranyekan !important;
+  font-size: 16px;
+  color: #1768f6;
+}
+
+footer .content .social span.active::before {
+  color: #1768f6;
+}
+
+footer .content .social span.active::after {
+  content: "";
+  cursor: default;
+  width: 65%;
+  border: 1px dashed #1768f6;
+  -webkit-transform: scaleX(1.5) translate(34%, 0);
+          transform: scaleX(1.5) translate(34%, 0);
+  position: absolute;
+  bottom: -8px;
+  right: 50%;
+}
+
+/******* footer of footer *******/
+footer .footer-footer {
+  padding: 18px 0 28px 0;
+  border-top: 1px solid #ebebeb;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -moz-flex;
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  /* NEW - Chrome */
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  font-size: 12px;
+  color: #505050;
+}
+
+footer .footer-footer .left p {
+  direction: ltr !important;
+}
+
+footer .footer-footer .left p a {
+  font-size: 12px;
+  text-decoration: underline;
+  color: #025af5;
+  font-weight: bold;
+}
+
+/****************************** responsive ******************************/
+@media (max-width: 1800px) {
+  .sec-slider .latest,
+  .sec-slider .slider {
+    height: 360px;
+  }
 }

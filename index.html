@@ -26,8 +26,8 @@
 
                 <div class="top-menu">
                     <ul class="menu" id="menu">
-                        <li data-time="1">
-                            <a href="#" class="active">صفحه اصلی</a>
+                        <li class="item active" data-time="1">
+                            <a href="#">صفحه اصلی</a>
 
                             <ul class="sub-menu">
                                 <li>
@@ -110,17 +110,17 @@
                             </ul>
 
                         </li>
-                        <li data-time="2">
+                        <li class="item" data-time="2">
                             <a href="#">
                                 خدمات
                             </a>
                         </li>
 
-                        <li data-time="3"><a href="#">
+                        <li class="item" data-time="3"><a href="#">
                                 تماس با ما
                             </a>
                         </li>
-                        <li data-time="4">
+                        <li class="item" data-time="4">
                             <a href="#">
                                 گالری
                             </a>
@@ -204,7 +204,7 @@
 
                             </ul>
                         </li>
-                        <li data-time="5">
+                        <li class="item" data-time="5">
                             <a href="#">
                                 درباره ما
                             </a>
@@ -215,22 +215,18 @@
 
                 <div class="member">
                     <div class="user">
-                        <span class="icon">
-                            <img src="images/header/profile/icon.svg" alt="profile">
-                        </span>
+                        <i class="flex flex-user"></i>
                         <span class="text">
                             حساب کاربری
                         </span>
-                        <span class="icon icon-arrow">
-                            <img src="images/header/profile/arrow.svg" alt="arrow">
-                        </span>
+                        <a href="#">
+                            <i class="flex flex-arrow"></i>
+                        </a>
                     </div>
 
-
-                    <div class="card">
-                        <img src="images/header/card/icon.svg" alt="card">
-                    </div>
-
+                    <a href="#">
+                        <i class="card flex flex-card"></i>
+                    </a>
 
                 </div>
             </div>
@@ -240,7 +236,7 @@
     <section class="sec sec-slider container">
 
         <div class="latest">
-            <img src="images/latest/pic.png" alt="latest">
+            <img src="images/latest/pic.jpg" alt="latest">
             <div class="text">
                 <h2 class="">
                     ۷ کتابی که به توصیه‌ی
@@ -260,7 +256,7 @@
         </div>
         <div class="slider">
             <div class="slider-content">
-                <img src="images/slider/pic.png" alt="slider" class="pic">
+                <img src="images/slider/pic.jpg" alt="slider" class="pic">
 
                 <div class="text">
 
@@ -354,7 +350,7 @@
 
                 </div>
                 <div class="search">
-                    <input type="search" name="serch" id="" placeholder="مطالب مورد نظر خود را جستجو کنید...">
+                    <input type="text" name="serch" id="" placeholder="مطالب مورد نظر خود را جستجو کنید...">
                     <input type="submit" value="">
                 </div>
 
@@ -363,11 +359,184 @@
 
     </section>
 
-    <section class="blog container">
+    <section class="container">
+        <div class="blog">
+            <div class="blog-item first">
+                <div class="blog-img">
+                    <img src="images/blog/pic_1.jpg" alt="blog-image">
+                    <div class="blog-img-time">
+                        <span>
+                            ۷
+                        </span>
+                        <span>
+                            دقیقه مطالعه
+                        </span>
+                    </div>
+                </div>
 
-        <div class="blog-item first">
-            <div class="blog-img">
-                <img src="images/blog/pic (1).png" alt="blog-image">
+                <div class="content">
+
+                    <div class="blog-middle">
+                        <div class="blog-title">
+                            <h3>
+                                اپل iOS 15 را برای آیفون رونمایی کرد
+                            </h3>
+                        </div>
+
+                        <div class="blog-text">
+                            بالاخره کنفرانس توسعه‌دهندگان اپل یعنی WWDC 2021 فرا رسید و مطابق انتظار، گوشی‌های جدید با
+                            چه
+                            قابلیت‌های
+                            نرم‌افزاری راهی بازار شوند.
+                        </div>
+                    </div>
+                    <div class="blog-footer">
+                        <div>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img profile">
+                                    <img src="icons/profile-blue.svg" alt="pofile">
+                                </span>
+
+                                <span class="profile-text">
+                                    نرگس معتمد
+                                </span>
+                            </span>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img time">
+                                    <img src="icons/time-gray.svg" alt="time">
+                                </span>
+
+                                <span class="time-text">
+                                    ۲۱ روز پیش
+                                </span>
+                            </span>
+                        </div>
+
+                        <a href="#" class="btn-blue">
+                            ادامه مطلب
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="images/blog/pic_2.jpg" alt="blog-image">
+                    <div class="blog-img-time">
+                        <span>
+                            ۷
+                        </span>
+                        <span>
+                            دقیقه مطالعه
+                        </span>
+                    </div>
+                </div>
+
+                <div class="content">
+
+                    <div class="blog-middle">
+                        <div class="blog-title">
+                            <h3>
+                                اپل iOS 15 را برای آیفون رونمایی کرد
+                            </h3>
+                        </div>
+
+                        <div class="blog-text">
+                            بالاخره کنفرانس توسعه‌دهندگان اپل یعنی WWDC 2021 فرا رسید و مطابق انتظار، گوشی‌های جدید با
+                            چه
+                            قابلیت‌های
+                            نرم‌افزاری راهی بازار شوند.
+                        </div>
+                    </div>
+                    <div class="blog-footer">
+                        <div>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img profile">
+                                    <img src="icons/profile-blue.svg" alt="pofile">
+                                </span>
+
+                                <span class="profile-text">
+                                    نرگس معتمد
+                                </span>
+                            </span>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img time">
+                                    <img src="icons/time-gray.svg" alt="time">
+                                </span>
+
+                                <span class="time-text">
+                                    ۲۱ روز پیش
+                                </span>
+                            </span>
+                        </div>
+
+                        <a href="#" class="btn-blue">
+                            ادامه مطلب
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-item third">
+                <div class="blog-img">
+                    <img src="images/blog/pic_3.jpg" alt="blog-image">
+                    <div class="blog-img-time">
+                        <span>
+                            ۷
+                        </span>
+                        <span>
+                            دقیقه مطالعه
+                        </span>
+                    </div>
+                </div>
+
+                <div class="content">
+
+                    <div class="blog-middle">
+                        <div class="blog-title">
+                            <h3>
+                                اپل iOS 15 را برای آیفون رونمایی کرد
+                            </h3>
+                        </div>
+
+                        <div class="blog-text">
+                            بالاخره کنفرانس توسعه‌دهندگان اپل یعنی WWDC 2021 فرا رسید و مطابق انتظار، گوشی‌های جدید با
+                            چه
+                            قابلیت‌های
+                            نرم‌افزاری راهی بازار شوند.
+                        </div>
+                    </div>
+                    <div class="blog-footer">
+                        <div>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img profile">
+                                    <img src="icons/profile-blue.svg" alt="pofile">
+                                </span>
+
+                                <span class="profile-text">
+                                    نرگس معتمد
+                                </span>
+                            </span>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img time">
+                                    <img src="icons/time-gray.svg" alt="time">
+                                </span>
+
+                                <span class="time-text">
+                                    ۲۱ روز پیش
+                                </span>
+                            </span>
+                        </div>
+
+                        <a href="#" class="btn-blue">
+                            ادامه مطلب
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="blog-item-wide">
                 <div class="blog-img-time">
                     <span>
                         ۷
@@ -376,552 +545,589 @@
                         دقیقه مطالعه
                     </span>
                 </div>
-            </div>
 
-            <div class="content">
+                <div class="content">
+                    <div class="blog-middle">
+                        <div class="blog-title">
+                            <h3>
+                                اپل iOS 15 را برای آیفون رونمایی کرد
+                            </h3>
+                        </div>
 
-                <div class="blog-middle">
-                    <div class="blog-title">
-                        <h3>
-                            اپل iOS 15 را برای آیفون رونمایی کرد
-                        </h3>
+                        <div class="blog-text">
+                            بالاخره کنفرانس توسعه‌دهندگان اپل یعنی WWDC 2021 فرا رسید و مطابق انتظار، گوشی‌های جدید با
+                            چه
+                            قابلیت‌های
+                            نرم‌افزاری راهی بازار شوند.
+                        </div>
                     </div>
+                    <div class="blog-footer">
 
-                    <div class="blog-text">
-                        بالاخره کنفرانس توسعه‌دهندگان اپل یعنی WWDC 2021 فرا رسید و مطابق انتظار، گوشی‌های جدید با چه
-                        قابلیت‌های
-                        نرم‌افزاری راهی بازار شوند.
+                        <div>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img profile">
+                                    <img src="icons/profile-blue.svg" alt="pofile">
+                                </span>
+
+                                <span class="profile-text">
+                                    نرگس معتمد
+                                </span>
+                            </span>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img time">
+                                    <img src="icons/time-gray.svg" alt="time">
+                                </span>
+
+                                <span class="time-text">
+                                    ۲۱ روز پیش
+                                </span>
+                            </span>
+                        </div>
+
+                        <a href="#" class="btn-blue">
+                            ادامه مطلب
+                        </a>
                     </div>
                 </div>
-                <div class="blog-footer">
 
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img profile">
-                            <img src="icons/profile-blue.svg" alt="pofile">
-                        </span>
 
-                        <span class="profile-text">
-                            نرگس معتمد
-                        </span>
-                    </span>
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img time">
-                            <img src="icons/time-gray.svg" alt="time">
-                        </span>
+            </div>
 
-                        <span class="time-text">
-                            ۲۱ روز پیش
+            <div class="blog-item first">
+                <div class="blog-img">
+                    <img src="images/blog/pic_4.jpg" alt="blog-image">
+                    <div class="blog-img-time">
+                        <span>
+                            ۷
                         </span>
-                    </span>
+                        <span>
+                            دقیقه مطالعه
+                        </span>
+                    </div>
+                </div>
 
-                    <a href="#" class="btn-blue">
-                        ادامه مطلب
-                    </a>
+                <div class="content">
+                    <div class="blog-middle">
+                        <div class="blog-title">
+                            <h3>
+                                اپل iOS 15 را برای آیفون رونمایی کرد
+                            </h3>
+                        </div>
+
+                        <div class="blog-text">
+                            بالاخره کنفرانس توسعه‌دهندگان اپل یعنی WWDC 2021 فرا رسید و مطابق انتظار، گوشی‌های جدید با
+                            چه
+                            قابلیت‌های
+                            نرم‌افزاری راهی بازار شوند.
+                        </div>
+                    </div>
+                    <div class="blog-footer">
+
+                        <div>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img profile">
+                                    <img src="icons/profile-blue.svg" alt="pofile">
+                                </span>
+
+                                <span class="profile-text">
+                                    نرگس معتمد
+                                </span>
+                            </span>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img time">
+                                    <img src="icons/time-gray.svg" alt="time">
+                                </span>
+
+                                <span class="time-text">
+                                    ۲۱ روز پیش
+                                </span>
+                            </span>
+                        </div>
+
+                        <a href="#" class="btn-blue">
+                            ادامه مطلب
+                        </a>
+                    </div>
                 </div>
             </div>
+
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="images/blog/pic_5.jpg" alt="blog-image">
+                    <div class="blog-img-time">
+                        <span>
+                            ۷
+                        </span>
+                        <span>
+                            دقیقه مطالعه
+                        </span>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="blog-middle">
+                        <div class="blog-title">
+                            <h3>
+                                اپل iOS 15 را برای آیفون رونمایی کرد
+                            </h3>
+                        </div>
+
+                        <div class="blog-text">
+                            بالاخره کنفرانس توسعه‌دهندگان اپل یعنی WWDC 2021 فرا رسید و مطابق انتظار، گوشی‌های جدید با
+                            چه
+                            قابلیت‌های
+                            نرم‌افزاری راهی بازار شوند.
+                        </div>
+                    </div>
+                    <div class="blog-footer">
+                        <div>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img profile">
+                                    <img src="icons/profile-blue.svg" alt="pofile">
+                                </span>
+
+                                <span class="profile-text">
+                                    نرگس معتمد
+                                </span>
+                            </span>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img time">
+                                    <img src="icons/time-gray.svg" alt="time">
+                                </span>
+
+                                <span class="time-text">
+                                    ۲۱ روز پیش
+                                </span>
+                            </span>
+                        </div>
+
+                        <a href="#" class="btn-blue">
+                            ادامه مطلب
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-item video">
+                <div class="blog-img">
+                    <img src="images/blog/pic_6.jpg" alt="blog-image">
+                </div>
+
+                <div class="play">
+                    <div class="play-btn">
+                        <img class="play-btn-img" src="icons/play.svg" alt="play"
+                            onclick="playPause('video/video_1.mp4')">
+                    </div>
+                </div>
+
+
+                <div class="content">
+                    <div class="blog-middle">
+                        <div class="blog-title">
+                            <h3>
+                                بررسی لپ‌تاپ هواوی میت‌بوک 2020
+                            </h3>
+                        </div>
+
+                        <div class="blog-text">
+
+                        </div>
+                    </div>
+                    <div class="blog-footer">
+                        <div>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img profile">
+                                    <img src="icons/profile-blue.svg" alt="pofile">
+                                </span>
+
+                                <span class="profile-text">
+                                    نرگس معتمد
+                                </span>
+                            </span>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img time">
+                                    <img src="icons/time-gray.svg" alt="time">
+                                </span>
+
+                                <span class="time-text">
+                                    ۲۱ روز پیش
+                                </span>
+                            </span>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-item first">
+                <div class="blog-img">
+                    <img src="images/blog/pic_7.jpg" alt="blog-image">
+                    <div class="blog-img-time">
+                        <span>
+                            ۷
+                        </span>
+                        <span>
+                            دقیقه مطالعه
+                        </span>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="blog-middle">
+                        <div class="blog-title">
+                            <h3>
+                                اپل iOS 15 را برای آیفون رونمایی کرد
+                            </h3>
+                        </div>
+
+                        <div class="blog-text">
+                            بالاخره کنفرانس توسعه‌دهندگان اپل یعنی WWDC 2021 فرا رسید و مطابق انتظار، گوشی‌های جدید با
+                            چه
+                            قابلیت‌های
+                            نرم‌افزاری راهی بازار شوند.
+                        </div>
+                    </div>
+                    <div class="blog-footer">
+
+                        <div>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img profile">
+                                    <img src="icons/profile-blue.svg" alt="pofile">
+                                </span>
+
+                                <span class="profile-text">
+                                    نرگس معتمد
+                                </span>
+                            </span>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img time">
+                                    <img src="icons/time-gray.svg" alt="time">
+                                </span>
+
+                                <span class="time-text">
+                                    ۲۱ روز پیش
+                                </span>
+                            </span>
+                        </div>
+
+                        <a href="#" class="btn-blue">
+                            ادامه مطلب
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="images/blog/pic_8.jpg" alt=" blog-image">
+                    <div class="blog-img-time">
+                        <span>
+                            ۷
+                        </span>
+                        <span>
+                            دقیقه مطالعه
+                        </span>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="blog-middle">
+                        <div class="blog-title">
+                            <h3>
+                                اپل iOS 15 را برای آیفون رونمایی کرد
+                            </h3>
+                        </div>
+
+                        <div class="blog-text">
+                            بالاخره کنفرانس توسعه‌دهندگان اپل یعنی WWDC 2021 فرا رسید و مطابق انتظار، گوشی‌های جدید با
+                            چه
+                            قابلیت‌های
+                            نرم‌افزاری راهی بازار شوند.
+                        </div>
+                    </div>
+                    <div class="blog-footer">
+
+                        <div>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img profile">
+                                    <img src="icons/profile-blue.svg" alt="pofile">
+                                </span>
+
+                                <span class="profile-text">
+                                    نرگس معتمد
+                                </span>
+                            </span>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img time">
+                                    <img src="icons/time-gray.svg" alt="time">
+                                </span>
+
+                                <span class="time-text">
+                                    ۲۱ روز پیش
+                                </span>
+                            </span>
+                        </div>
+
+                        <a href="#" class="btn-blue">
+                            ادامه مطلب
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-item third">
+
+                <div class="blog-img">
+                    <img src="images/blog/pic_9.jpg" alt="blog-image">
+                    <div class="blog-img-time">
+                        <span>
+                            ۷
+                        </span>
+                        <span>
+                            دقیقه مطالعه
+                        </span>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="blog-middle">
+                        <div class="blog-title">
+                            <h3>
+                                اپل iOS 15 را برای آیفون رونمایی کرد
+                            </h3>
+                        </div>
+
+                        <div class="blog-text">
+                            بالاخره کنفرانس توسعه‌دهندگان اپل یعنی WWDC 2021 فرا رسید و مطابق انتظار، گوشی‌های جدید با
+                            چه
+                            قابلیت‌های
+                            نرم‌افزاری راهی بازار شوند.
+                        </div>
+                    </div>
+                    <div class="blog-footer">
+
+                        <div>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img profile">
+                                    <img src="icons/profile-blue.svg" alt="pofile">
+                                </span>
+
+                                <span class="profile-text">
+                                    نرگس معتمد
+                                </span>
+                            </span>
+                            <span class="blog-footer-text">
+                                <span class="blog-footer-img time">
+                                    <img src="icons/time-gray.svg" alt="time">
+                                </span>
+
+                                <span class="time-text">
+                                    ۲۱ روز پیش
+                                </span>
+                            </span>
+                        </div>
+
+                        <a href="#" class="btn-blue">
+                            ادامه مطلب
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <div class="blog-item">
-            <div class="blog-img">
-                <img src="images/blog/pic (2).png" alt="blog-image">
-                <div class="blog-img-time">
-                    <span>
-                        ۷
-                    </span>
-                    <span>
-                        دقیقه مطالعه
-                    </span>
-                </div>
-            </div>
-
-            <div class="content">
-
-                <div class="blog-middle">
-                    <div class="blog-title">
-                        <h3>
-                            اپل iOS 15 را برای آیفون رونمایی کرد
-                        </h3>
-                    </div>
-
-                    <div class="blog-text">
-                        بالاخره کنفرانس توسعه‌دهندگان اپل یعنی WWDC 2021 فرا رسید و مطابق انتظار، گوشی‌های جدید با چه
-                        قابلیت‌های
-                        نرم‌افزاری راهی بازار شوند.
-                    </div>
-                </div>
-                <div class="blog-footer">
-
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img profile">
-                            <img src="icons/profile-blue.svg" alt="pofile">
-                        </span>
-
-                        <span class="profile-text">
-                            نرگس معتمد
-                        </span>
-                    </span>
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img time">
-                            <img src="icons/time-gray.svg" alt="time">
-                        </span>
-
-                        <span class="time-text">
-                            ۲۱ روز پیش
-                        </span>
-                    </span>
-
-                    <a href="#" class="btn-blue">
-                        ادامه مطلب
-                    </a>
-                </div>
-            </div>
+        <div class="pagination">
+            <ul>
+                <a href="#">
+                    <li class="flex flex-left-arrow"></li>
+                </a>
+                <a href="#">
+                    <li class="active">۱</li>
+                </a>
+                <a href="#">
+                    <li>۲</li>
+                </a>
+                <a href="#">
+                    <li>۳</li>
+                </a>
+                <li class="line"></li>
+                <a href="#">
+                    <li>74</li>
+                </a>
+                <a href="#">
+                    <li class="flex flex-right-arrow"></li>
+                </a>
+            </ul>
         </div>
-
-        <div class="blog-item third">
-            <div class="blog-img">
-                <img src="images/blog/pic (3).png" alt="blog-image">
-                <div class="blog-img-time">
-                    <span>
-                        ۷
-                    </span>
-                    <span>
-                        دقیقه مطالعه
-                    </span>
-                </div>
-            </div>
-
-            <div class="content">
-
-                <div class="blog-middle">
-                    <div class="blog-title">
-                        <h3>
-                            اپل iOS 15 را برای آیفون رونمایی کرد
-                        </h3>
-                    </div>
-
-                    <div class="blog-text">
-                        بالاخره کنفرانس توسعه‌دهندگان اپل یعنی WWDC 2021 فرا رسید و مطابق انتظار، گوشی‌های جدید با چه
-                        قابلیت‌های
-                        نرم‌افزاری راهی بازار شوند.
-                    </div>
-                </div>
-                <div class="blog-footer">
-
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img profile">
-                            <img src="icons/profile-blue.svg" alt="pofile">
-                        </span>
-
-                        <span class="profile-text">
-                            نرگس معتمد
-                        </span>
-                    </span>
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img time">
-                            <img src="icons/time-gray.svg" alt="time">
-                        </span>
-
-                        <span class="time-text">
-                            ۲۱ روز پیش
-                        </span>
-                    </span>
-
-                    <a href="#" class="btn-blue">
-                        ادامه مطلب
-                    </a>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="blog-item-wide">
-            <div class="blog-img-time">
-                <span>
-                    ۷
-                </span>
-                <span>
-                    دقیقه مطالعه
-                </span>
-            </div>
-
-            <div class="content">
-                <div class="blog-middle">
-                    <div class="blog-title">
-                        <h3>
-                            اپل iOS 15 را برای آیفون رونمایی کرد
-                        </h3>
-                    </div>
-
-                    <div class="blog-text">
-                        بالاخره کنفرانس توسعه‌دهندگان اپل یعنی WWDC 2021 فرا رسید و مطابق انتظار، گوشی‌های جدید با چه
-                        قابلیت‌های
-                        نرم‌افزاری راهی بازار شوند.
-                    </div>
-                </div>
-                <div class="blog-footer">
-
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img profile">
-                            <img src="icons/profile-blue.svg" alt="pofile">
-                        </span>
-
-                        <span class="profile-text">
-                            نرگس معتمد
-                        </span>
-                    </span>
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img time">
-                            <img src="icons/time-gray.svg" alt="time">
-                        </span>
-
-                        <span class="time-text">
-                            ۲۱ روز پیش
-                        </span>
-                    </span>
-
-                    <a href="#" class="btn-blue">
-                        ادامه مطلب
-                    </a>
-                </div>
-            </div>
-
-
-        </div>
-
-        <div class="blog-item first">
-            <div class="blog-img">
-                <img src="images/blog/pic (4).png" alt="blog-image">
-                <div class="blog-img-time">
-                    <span>
-                        ۷
-                    </span>
-                    <span>
-                        دقیقه مطالعه
-                    </span>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="blog-middle">
-                    <div class="blog-title">
-                        <h3>
-                            اپل iOS 15 را برای آیفون رونمایی کرد
-                        </h3>
-                    </div>
-
-                    <div class="blog-text">
-                        بالاخره کنفرانس توسعه‌دهندگان اپل یعنی WWDC 2021 فرا رسید و مطابق انتظار، گوشی‌های جدید با چه
-                        قابلیت‌های
-                        نرم‌افزاری راهی بازار شوند.
-                    </div>
-                </div>
-                <div class="blog-footer">
-
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img profile">
-                            <img src="icons/profile-blue.svg" alt="pofile">
-                        </span>
-
-                        <span class="profile-text">
-                            نرگس معتمد
-                        </span>
-                    </span>
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img time">
-                            <img src="icons/time-gray.svg" alt="time">
-                        </span>
-
-                        <span class="time-text">
-                            ۲۱ روز پیش
-                        </span>
-                    </span>
-
-                    <a href="#" class="btn-blue">
-                        ادامه مطلب
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="blog-item">
-            <div class="blog-img">
-                <img src="images/blog/pic (5).png" alt="blog-image">
-                <div class="blog-img-time">
-                    <span>
-                        ۷
-                    </span>
-                    <span>
-                        دقیقه مطالعه
-                    </span>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="blog-middle">
-                    <div class="blog-title">
-                        <h3>
-                            اپل iOS 15 را برای آیفون رونمایی کرد
-                        </h3>
-                    </div>
-
-                    <div class="blog-text">
-                        بالاخره کنفرانس توسعه‌دهندگان اپل یعنی WWDC 2021 فرا رسید و مطابق انتظار، گوشی‌های جدید با چه
-                        قابلیت‌های
-                        نرم‌افزاری راهی بازار شوند.
-                    </div>
-                </div>
-                <div class="blog-footer">
-
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img profile">
-                            <img src="icons/profile-blue.svg" alt="pofile">
-                        </span>
-
-                        <span class="profile-text">
-                            نرگس معتمد
-                        </span>
-                    </span>
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img time">
-                            <img src="icons/time-gray.svg" alt="time">
-                        </span>
-
-                        <span class="time-text">
-                            ۲۱ روز پیش
-                        </span>
-                    </span>
-
-                    <a href="#" class="btn-blue">
-                        ادامه مطلب
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="blog-item video">
-            <div class="blog-img">
-                <img src="images/blog/pic (6).png" alt="blog-image">
-            </div>
-
-            <div class="play">
-                <div class="play-btn">
-                    <img class="play-btn-img" src="icons/play.svg" alt="play"
-                        onclick="playPause('video/sample-5s.mp4')">
-                </div>
-            </div>
-
-
-            <div class="content">
-                <div class="blog-middle">
-                    <div class="blog-title">
-                        <h3>
-                            بررسی لپ‌تاپ هواوی میت‌بوک 2020
-                        </h3>
-                    </div>
-
-                    <div class="blog-text">
-
-                    </div>
-                </div>
-                <div class="blog-footer">
-
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img profile">
-                            <img src="icons/profile-blue.svg" alt="pofile">
-                        </span>
-
-                        <span class="profile-text">
-                            نرگس معتمد
-                        </span>
-                    </span>
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img time">
-                            <img src="icons/time-gray.svg" alt="time">
-                        </span>
-
-                        <span class="time-text">
-                            ۲۱ روز پیش
-                        </span>
-                    </span>
-
-
-                </div>
-            </div>
-        </div>
-
-        <div class="blog-item first">
-            <div class="blog-img">
-                <img src="images/blog/pic (7).png" alt="blog-image">
-                <div class="blog-img-time">
-                    <span>
-                        ۷
-                    </span>
-                    <span>
-                        دقیقه مطالعه
-                    </span>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="blog-middle">
-                    <div class="blog-title">
-                        <h3>
-                            اپل iOS 15 را برای آیفون رونمایی کرد
-                        </h3>
-                    </div>
-
-                    <div class="blog-text">
-                        بالاخره کنفرانس توسعه‌دهندگان اپل یعنی WWDC 2021 فرا رسید و مطابق انتظار، گوشی‌های جدید با چه
-                        قابلیت‌های
-                        نرم‌افزاری راهی بازار شوند.
-                    </div>
-                </div>
-                <div class="blog-footer">
-
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img profile">
-                            <img src="icons/profile-blue.svg" alt="pofile">
-                        </span>
-
-                        <span class="profile-text">
-                            نرگس معتمد
-                        </span>
-                    </span>
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img time">
-                            <img src="icons/time-gray.svg" alt="time">
-                        </span>
-
-                        <span class="time-text">
-                            ۲۱ روز پیش
-                        </span>
-                    </span>
-
-                    <a href="#" class="btn-blue">
-                        ادامه مطلب
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="blog-item">
-            <div class="blog-img">
-                <img src="images/blog/pic (8).png" alt="blog-image">
-                <div class="blog-img-time">
-                    <span>
-                        ۷
-                    </span>
-                    <span>
-                        دقیقه مطالعه
-                    </span>
-                </div>
-            </div>
-            <div class="content">
-                <div class="blog-middle">
-                    <div class="blog-title">
-                        <h3>
-                            اپل iOS 15 را برای آیفون رونمایی کرد
-                        </h3>
-                    </div>
-
-                    <div class="blog-text">
-                        بالاخره کنفرانس توسعه‌دهندگان اپل یعنی WWDC 2021 فرا رسید و مطابق انتظار، گوشی‌های جدید با چه
-                        قابلیت‌های
-                        نرم‌افزاری راهی بازار شوند.
-                    </div>
-                </div>
-                <div class="blog-footer">
-
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img profile">
-                            <img src="icons/profile-blue.svg" alt="pofile">
-                        </span>
-
-                        <span class="profile-text">
-                            نرگس معتمد
-                        </span>
-                    </span>
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img time">
-                            <img src="icons/time-gray.svg" alt="time">
-                        </span>
-
-                        <span class="time-text">
-                            ۲۱ روز پیش
-                        </span>
-                    </span>
-
-                    <a href="#" class="btn-blue">
-                        ادامه مطلب
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="blog-item third">
-
-            <div class="blog-img">
-                <img src="images/blog/pic (9).png" alt="blog-image">
-                <div class="blog-img-time">
-                    <span>
-                        ۷
-                    </span>
-                    <span>
-                        دقیقه مطالعه
-                    </span>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="blog-middle">
-                    <div class="blog-title">
-                        <h3>
-                            اپل iOS 15 را برای آیفون رونمایی کرد
-                        </h3>
-                    </div>
-
-                    <div class="blog-text">
-                        بالاخره کنفرانس توسعه‌دهندگان اپل یعنی WWDC 2021 فرا رسید و مطابق انتظار، گوشی‌های جدید با چه
-                        قابلیت‌های
-                        نرم‌افزاری راهی بازار شوند.
-                    </div>
-                </div>
-                <div class="blog-footer">
-
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img profile">
-                            <img src="icons/profile-blue.svg" alt="pofile">
-                        </span>
-
-                        <span class="profile-text">
-                            نرگس معتمد
-                        </span>
-                    </span>
-                    <span class="blog-footer-text">
-                        <span class="blog-footer-img time">
-                            <img src="icons/time-gray.svg" alt="time">
-                        </span>
-
-                        <span class="time-text">
-                            ۲۱ روز پیش
-                        </span>
-                    </span>
-
-                    <a href="#" class="btn-blue">
-                        ادامه مطلب
-                    </a>
-                </div>
-            </div>
-        </div>
-
-
 
     </section>
+
+    <footer class="">
+        <div class="container">
+
+            <div class="call">
+                <div class="call-content">
+                    <i class="flex flex-call"></i>
+                    <div class="text">
+                        <p>شماره تماس</p>
+                        <p>۰۲۱-۶۳۲۷۰۰</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="about">
+                    <div class="logo">
+                        <img src="images/footer/logo.png" alt="logo">
+                    </div>
+                    <div class="text">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                        گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+                        فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای با تولید سادگی نامفهوم از
+                        استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                        است، و ابزارهای کاربردی می باشد.
+                    </div>
+
+                </div>
+
+
+                <div class="services">
+                    <div class="title">خدمات</div>
+                    <ul class="links">
+                        <li><a href="#">
+                                صفحه نخست
+                            </a></li>
+
+                        <li><a href="#">
+                                درباره ما
+
+                            </a></li>
+
+                        <li><a href="#">
+                                ارتباط با ما
+
+                            </a></li>
+
+                        <li><a href="#">
+                                تبلیغات
+
+                            </a></li>
+
+                        <li><a href="#">
+                                همکاری
+
+                            </a></li>
+
+                        <li><a href="#">
+                                حمایت از ما
+
+                            </a></li>
+
+                    </ul>
+                </div>
+
+                <div class="services services-2">
+                    <div class="title">خدمات</div>
+
+                    <ul class="links">
+                        <li><a href="#">
+                                صفحه نخست
+                            </a></li>
+
+                        <li><a href="#">
+                                درباره ما
+
+                            </a></li>
+
+                        <li><a href="#">
+                                ارتباط با ما
+
+                            </a></li>
+
+                        <li><a href="#">
+                                تبلیغات
+
+                            </a></li>
+
+                        <li><a href="#">
+                                همکاری
+
+                            </a></li>
+
+                        <li><a href="#">
+                                حمایت از ما
+
+                            </a></li>
+
+                    </ul>
+                </div>
+
+                <div class="symbols">
+                    <div class="title">نماد های اطمینان</div>
+
+                    <div class="symbols-img">
+
+                        <div>
+                            <div>
+                                <img src="images/footer/pic_1.png" alt="">
+                                <p>نماد بانک سامان</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img src="images/footer/pic_2.png" alt="">
+                                <p>نماد ساماندهی</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img src="images/footer/pic_3.png" alt="">
+                                <p>نماد اطمینان الکترونیکی</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="social" id="social">
+                        <div class="social-title">
+                            شبکه‌های اجتماعی
+                        </div>
+                        <span class="icon flex flex-whatsapp" onclick="socialClick(this)"><a
+                                href="#">Pavilionteam</a></span>
+                        <span class="icon flex flex-twitter" onclick="socialClick(this)"><a
+                                href="#">Pavilionteam</a></span>
+                        <span class="icon flex flex-linkedin" onclick="socialClick(this)"><a
+                                href="#">Pavilionteam</a></span>
+                        <span class="icon flex flex-instagram" onclick="socialClick(this)"><a
+                                href="#">Pavilionteam</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-footer">
+                <span class="right">
+                    کلیه حقوق این وب سایت به تیم پاویون تعلق دارد و کپی برداری از آن ممنون می باشد.
+                </span>
+
+                <span class="left">
+                    <p class="top">
+                        © 2021 DOMAIN.com
+                    </p>
+                    <p class="bottom">
+                        <a href="#">Pavilion Team</a>
+                        Digital marketing Comppany
+                    </p>
+                </span>
+            </div>
+        </div>
+    </footer>
 
 
     <div id="videoPlayer">
         <video width="100%" id="myVideo" controls>
-            <source src="video/sample-5s.mp4" type="video/mp4">
+            <source src="video/video_1.mp4" type="video/mp4">
             Your browser does not support HTML video.
         </video>
         <img class="close-btn" src="icons/icons8-close-64.gif" alt="close" onclick="stopVideo()">

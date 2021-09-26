@@ -1,18 +1,18 @@
 @import "base";
-@import url(/WebFonts/css/fontiran.css);
+@import url(../WebFonts/css/fontiran.css);
 
 /******* header menu(sub-menu) *******/
 .top-header .top-menu .menu {
   .sub-menu {
     display: none;
-    background-color: #fff;
+    background-color: $pvn-bg-white;
     box-shadow: 0 0 10px rgba($color: #777777, $alpha: 0.5);
     border-radius: 17px;
     width: 250px;
     position: absolute;
     bottom: 0;
-    right: 0;
-    transform: translate(20%, 111%);
+    left: 50%;
+    transform: translate(-50%, 105%);
     z-index: 999;
 
     &::after {
@@ -21,22 +21,22 @@
       height: 0;
       border-style: solid;
       border-width: 0 13px 13px 13px;
-      border-color: transparent transparent #fff transparent;
+      border-color: transparent transparent $pvn-bg-white transparent;
       position: absolute;
       top: -12px;
-      right: 80px;
+      right: 81px;
       margin: 0 auto;
     }
 
     li {
-      border-bottom: 1px dashed #929292;
+      border-bottom: 1px dashed $pvn-gray;
 
       &:last-child {
         border-bottom: none;
       }
 
       a {
-        color: #929292;
+        color: $pvn-gray;
         display: flex;
         align-items: center;
         padding: 20px 15px;
@@ -56,7 +56,7 @@
         }
 
         .title {
-          color: #929292;
+          color: $pvn-gray;
           font-size: 16px;
           font-weight: bold;
           margin-bottom: 3px;
@@ -74,6 +74,277 @@
           display: block;
         }
       }
+    }
+  }
+}
+
+/****************************** blog pagination ******************************/
+
+.container .pagination {
+  width: 100%;
+  margin: 60px 0;
+  ul {
+    direction: ltr !important;
+    @include flex-center-center;
+
+    li {
+      @include flex-center-center;
+      width: 35px;
+      height: 35px;
+      margin: 0 5px;
+      border-radius: 18px;
+      background-color: $pvn-bg-white;
+      border: 1px solid #eeeeee;
+      font-size: 14px;
+      color: $pvn-gray;
+      @include transition3;
+
+      &.active {
+        background-color: $pvn-blue0;
+        color: $pvn-bg-white;
+      }
+
+      &.line {
+        height: 0;
+        width: 25px;
+      }
+
+      &.flex-left-arrow,
+      &.flex-right-arrow {
+        width: 54px;
+        height: 54px;
+        border-radius: 27px;
+        filter: drop-shadow(3px 5.196px 4.5px rgba(0, 0, 0, 0.06));
+        background-color: $pvn-bg-white;
+      }
+
+      &:hover {
+        background-color: $pvn-blue0;
+        color: $pvn-bg-white !important;
+      }
+
+      &:hover:before {
+        color: $pvn-bg-white !important;
+      }
+    }
+  }
+}
+
+/****************************** footer ******************************/
+
+footer {
+  position: relative;
+  background-color: #f9fafb;
+}
+
+/******* call of footer *******/
+
+footer .call {
+  width: 623px;
+  height: 138px;
+  background: url("../images/footer/call_bg.svg") no-repeat center;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  .call-content {
+    @include flex-center-center;
+    position: absolute;
+    right: 95px;
+    top: 25px;
+
+    i {
+      @include flex-center-center;
+      font-size: 20px;
+      width: 42px;
+      height: 42px;
+      border-radius: 21px;
+      background-color: #ebf2ff;
+    }
+
+    .text {
+      margin-right: 10px;
+    }
+
+    .text p {
+      font-size: 14px;
+      line-height: 18px;
+      color: $pvn-blue0;
+
+      &:nth-of-type(2) {
+        font-size: 16px;
+        margin-top: 3px;
+        letter-spacing: 2px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/******* content of footer *******/
+
+footer .content {
+  height: 362px;
+  @include flex-center-between;
+  color: $pvn-gray-dark;
+  padding: 45px 0 30px 0;
+  font-size: 13px;
+
+  // all titles
+  // all titles
+
+  .title {
+    font-size: 14px;
+    color: $pvn-blue0;
+    font-weight: bold;
+  }
+
+  // about of content
+  // about of content
+
+  .about {
+    height: 100%;
+    width: 34%;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: justify;
+
+    .logo {
+      margin-bottom: 20px;
+    }
+  }
+
+  // services of content
+  // services of content
+
+  .services {
+    height: 86%;
+    @include flex-start-between;
+    @include flex-direction(column);
+
+    .links {
+      height: 78%;
+      @include flex-start-between;
+      @include flex-direction(column);
+
+      a {
+        color: $pvn-gray-dark;
+
+        &:hover {
+          text-shadow: 0 0 2px #888888;
+        }
+      }
+    }
+  }
+
+  // symbols of content
+  // symbols of content
+
+  .symbols {
+    width: 36%;
+    height: 86%;
+    @include flex-start-between;
+    @include flex-direction(column);
+
+    .symbols-img {
+      width: 100%;
+      @include flex-center-between;
+    }
+
+    .symbols-img > div {
+      width: 128px;
+      height: 128px;
+      border-radius: 21px;
+      background-color: $pvn-bg-white;
+      @include flex-center-center;
+      font-size: 8px;
+
+      p {
+        margin-top: 5px;
+        text-align: center;
+        color: $pvn-gray;
+      }
+    }
+  }
+
+  .social {
+    width: 100%;
+    @include flex-center-between;
+
+    .social-title {
+      transform: translateY(1px);
+    }
+
+    span {
+      font-size: 26px;
+      position: relative;
+      cursor: pointer;
+
+      &::before {
+        vertical-align: middle;
+      }
+
+      &:hover::before {
+        color: $pvn-blue1;
+      }
+
+      a {
+        display: none;
+        margin-left: 5px;
+        font-family: iranyekan !important;
+        font-size: 16px;
+        color: $pvn-blue1;
+      }
+
+      &.active {
+        &::before {
+          color: $pvn-blue1;
+        }
+        &::after {
+          content: "";
+          cursor: default;
+          width: 65%;
+          border: 1px dashed $pvn-blue1;
+          transform: scaleX(1.5) translate(34%, 0);
+          position: absolute;
+          bottom: -8px;
+          right: 50%;
+        }
+      }
+    }
+  }
+}
+
+/******* footer of footer *******/
+
+footer .footer-footer {
+  padding: 18px 0 28px 0;
+  border-top: 1px solid #ebebeb;
+  @include flex;
+  @include justify-content(space-between);
+  @include align-items(flex-end);
+  font-size: 12px;
+  color: $pvn-gray-dark;
+  .left {
+    p {
+      direction: ltr !important;
+
+      a {
+        font-size: 12px;
+        text-decoration: underline;
+        color: $pvn-blue0;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/****************************** responsive ******************************/
+
+@media #{$break-4xl} {
+  .sec-slider {
+    .latest,
+    .slider {
+      height: 360px;
     }
   }
 }
