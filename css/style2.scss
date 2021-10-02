@@ -183,7 +183,7 @@ footer .call {
 /******* content of footer *******/
 
 footer .content {
-  height: 362px;
+  // height: 362px;
   @include flex-center-between;
   color: $pvn-gray-dark;
   padding: 45px 0 30px 0;
@@ -217,7 +217,7 @@ footer .content {
   // services of content
 
   .services {
-    height: 86%;
+    height: 247px;
     @include flex-start-between;
     @include flex-direction(column);
 
@@ -241,7 +241,7 @@ footer .content {
 
   .symbols {
     width: 36%;
-    height: 86%;
+    height: 247px;
     @include flex-start-between;
     @include flex-direction(column);
 
@@ -522,16 +522,239 @@ footer .footer-footer {
     width: 75%;
   }
 
+  .sec-slider {
+    .slider,
+    .latest {
+      height: 320px;
+    }
+
+    .latest {
+      width: 24%;
+    }
+
+    .slider .counter {
+      width: 265px;
+      height: 90px;
+    }
+
+    .counter .counter-text {
+      .page {
+        font-size: 16px !important;
+      }
+
+      .slash {
+        font-size: 16px !important;
+      }
+
+      .all {
+        font-size: 10px;
+      }
+    }
+
+    .text {
+      h2 {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .form form {
+    width: 80%;
+  }
+
   section .blog {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+
+    .blog-item .blog-img img {
+      border-radius: 21px;
+    }
+
+    .blog-item-wide {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
 
     .blog-item:nth-child(2n-1) {
-      grid-column-start: 1;
-      grid-column-end: 2;
+      .blog-img img {
+        border-bottom-left-radius: 0px;
+      }
     }
     .blog-item:nth-child(2n) {
-      grid-column-start: 2;
-      grid-column-end: 3;
+      .blog-img img {
+        border-bottom-right-radius: 0px;
+      }
+    }
+  }
+
+  footer .content {
+    flex-wrap: wrap;
+
+    .about {
+      width: 50%;
+      margin-bottom: 50px;
+    }
+
+    .services {
+      width: 30%;
+      &.services-2 {
+        order: 1;
+      }
+    }
+
+    .symbols {
+      width: 50%;
+    }
+  }
+}
+
+@media #{$break-xl} {
+  .sec-slider {
+    flex-direction: column-reverse;
+
+    .latest {
+      margin-top: 45px;
+      width: 100%;
+      .text {
+        text-align: right;
+      }
+    }
+    .slider {
+      width: 100%;
+    }
+  }
+}
+
+@media #{$break-lg} {
+  .container {
+    width: 92%;
+  }
+}
+
+@media #{$break-md} {
+  .container {
+    width: 85%;
+  }
+
+  .form {
+    flex-direction: column;
+
+    span {
+      margin-bottom: 20px;
+    }
+
+    form {
+      width: 100%;
+    }
+  }
+
+  section .blog {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+
+    .blog-item-wide {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      // background: url("../images/blog/pic_wide.jpg") no-repeat top center/58%;
+      // background-size: 60% 60%;
+      // border-radius: 21px;
+      // .blog-img-time {
+      //   bottom: 18px;
+      //   right: 17px;
+      // }
+    }
+
+    .blog-item .blog-img {
+      height: 270px;
+      img {
+        border-radius: 21px;
+      }
+    }
+  }
+
+  footer .footer-footer {
+    flex-direction: column;
+
+    span {
+      width: 100%;
+      &:nth-child(1) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media #{$break-sm} {
+  .container {
+    width: 95%;
+  }
+
+  .sec-slider {
+    .slider,
+    .latest {
+      height: 280px;
+    }
+  }
+
+  footer {
+    .call {
+      // width: 100%;
+      // height: 128px;
+
+      .call-content {
+        top: 20px !important;
+      }
+    }
+    .content {
+      padding-top: 100px;
+      justify-content: space-evenly;
+
+      .about {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0 20px;
+      }
+
+      .services {
+        width: auto;
+        margin-bottom: 30px;
+
+        &.services-2 {
+          order: 0;
+        }
+      }
+
+      .symbols {
+        width: 100%;
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+@media #{$break-xsm} {
+  .form form {
+    flex-direction: column;
+
+    .select {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    .search {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  footer {
+    .about {
+      padding: 0 !important;
+    }
+
+    .symbols {
+      padding: 0 !important;
     }
   }
 }
