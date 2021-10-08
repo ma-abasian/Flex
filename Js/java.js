@@ -73,3 +73,17 @@ function socialClick(tag) {
     }
 
 }
+
+// responsive menu
+// responsive menu
+var topMenu = document.getElementById("top-menu"); 
+
+function menuBtn(tag) {
+    if ($(tag).hasClass('active')){
+        $(topMenu).slideUp();
+        $(tag).removeClass('active');
+    } else{
+        $(topMenu).slideDown();
+        $(tag).addClass('active');
+    }
+}

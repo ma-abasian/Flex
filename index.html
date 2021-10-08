@@ -18,11 +18,19 @@
         <div class="container">
 
             <div class="top-header">
+                <div class="btn">
+                    <button class="menu-btn" onclick="menuBtn(this)">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </button>
+                </div>
+
                 <div class="logo">
                     <img src="images/header/logo.png" alt="logo">
                 </div>
 
-                <div class="top-menu">
+                <div class="top-menu" id="top-menu">
                     <ul class="menu" id="menu">
                         <li class="item active" data-time="1">
                             <a href="#">صفحه اصلی</a>
@@ -950,7 +958,7 @@
                 </a>
                 <li class="line"></li>
                 <a href="#">
-                    <li>74</li>
+                    <li>۷۴</li>
                 </a>
                 <a href="#">
                     <li class="flex flex-right-arrow"></li>
@@ -1124,7 +1132,7 @@
 
     <div id="videoPlayer">
         <video width="100%" id="myVideo" controls>
-            <source src="video/video_1.mp4" type="video/mp4">
+            <source src="./video/video_1.mp4" type="video/mp4">
             Your browser does not support HTML video.
         </video>
         <img class="close-btn" src="icons/icons8-close-64.gif" alt="close" onclick="stopVideo()">
